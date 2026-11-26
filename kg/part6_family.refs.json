@@ -1,0 +1,231 @@
+[
+ {
+  "type": "webpage",
+  "title": "Regression Models; Linear Regression",
+  "author": [
+   {
+    "literal": "DataInterview"
+   }
+  ],
+  "id": "datainterview2026regression",
+  "lab": {
+   "work": "lab:work/datainterview2026regression",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김(공식 오류는 본문에서 바로잡음)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "webpage",
+  "title": "Regression Models",
+  "author": [
+   {
+    "literal": "MLTut"
+   }
+  ],
+  "id": "mltut2026regression",
+  "lab": {
+   "work": "lab:work/mltut2026regression",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "webpage",
+  "title": "Logistic Regression and Softmax Regression",
+  "author": [
+   {
+    "literal": "mathemetica"
+   }
+  ],
+  "id": "mathemetica2026logistic",
+  "lab": {
+   "work": "lab:work/mathemetica2026logistic",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "webpage",
+  "title": "Types of Regression Models Every Quant Should Know",
+  "author": [
+   {
+    "literal": "The Architecture Series"
+   }
+  ],
+  "id": "archseries2026regression",
+  "lab": {
+   "work": "lab:work/archseries2026regression",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "article-journal",
+  "title": "Generalized linear models",
+  "author": [
+   {
+    "family": "Nelder",
+    "given": "J. A."
+   },
+   {
+    "family": "Wedderburn",
+    "given": "R. W. M."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1972
+    ]
+   ]
+  },
+  "container-title": "Journal of the Royal Statistical Society: Series A",
+  "id": "nelder1972generalized",
+  "lab": {
+   "work": "lab:work/nelder1972generalized",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "article-journal",
+  "title": "Regression quantiles",
+  "author": [
+   {
+    "family": "Koenker",
+    "given": "Roger"
+   },
+   {
+    "family": "Bassett",
+    "given": "Gilbert"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1978
+    ]
+   ]
+  },
+  "container-title": "Econometrica",
+  "id": "koenker1978regression",
+  "lab": {
+   "work": "lab:work/koenker1978regression",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "book",
+  "title": "An Introduction to Statistical Learning",
+  "author": [
+   {
+    "family": "James",
+    "given": "Gareth"
+   },
+   {
+    "family": "Witten",
+    "given": "Daniela"
+   },
+   {
+    "family": "Hastie",
+    "given": "Trevor"
+   },
+   {
+    "family": "Tibshirani",
+    "given": "Robert"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2013
+    ]
+   ]
+  },
+  "publisher": "Springer",
+  "id": "james2013introduction",
+  "lab": {
+   "work": "lab:work/james2013introduction",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ }
+]

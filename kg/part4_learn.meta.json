@@ -1,0 +1,42 @@
+{
+ "title": "스스로 찾아 내려가기 — 경사 하강, 학습률, 그리고 벌점",
+ "number": "파트 4",
+ "series": "회귀 예측·분석 대회",
+ "about": [
+  "lab:concept/gradient-descent",
+  "lab:concept/learning-rate",
+  "lab:concept/sgd",
+  "lab:concept/overfitting",
+  "lab:concept/ridge",
+  "lab:concept/lasso"
+ ],
+ "basedOn": [
+  "archseries2026regression",
+  "regalgos2026"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author",
+   "url": "https://adminmrobo.github.io/who_am_i/who_am_i.html"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-27",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/Regression_model_lab_01/part4_learn.html",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "interactive explainer",
+ "seeAlso": "",
+ "suggestedCitation": "안상선 (2026). 스스로 찾아 내려가기 — 경사 하강, 학습률, 그리고 벌점. 회귀 예측·분석 대회 파트 4, v1.0."
+}

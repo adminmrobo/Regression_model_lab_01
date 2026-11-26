@@ -1,0 +1,153 @@
+[
+ {
+  "type": "webpage",
+  "title": "Multiple Regression Assumption #1: Linearity",
+  "author": [
+   {
+    "literal": "작자 미상 인포그래픽"
+   }
+  ],
+  "id": "linearity2026infographic",
+  "lab": {
+   "work": "lab:work/linearity2026infographic",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": false,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "webpage",
+  "title": "Spearman Rank Correlation",
+  "author": [
+   {
+    "literal": "작자 미상 인포그래픽"
+   }
+  ],
+  "id": "spearman2026infographic",
+  "lab": {
+   "work": "lab:work/spearman2026infographic",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": false,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김(예제 계산 검산 완료)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "webpage",
+  "title": "Ordinary Least Squares (OLS): The Engine of Linear Regression",
+  "author": [
+   {
+    "literal": "Insightforge"
+   }
+  ],
+  "id": "insightforge2026ols",
+  "lab": {
+   "work": "lab:work/insightforge2026ols",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김(깨진 수치 \"T5%\"는 쓰지 않음)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "webpage",
+  "title": "Regression Models",
+  "author": [
+   {
+    "literal": "MLTut"
+   }
+  ],
+  "id": "mltut2026regression",
+  "lab": {
+   "work": "lab:work/mltut2026regression",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "book",
+  "title": "An Introduction to Statistical Learning",
+  "author": [
+   {
+    "family": "James",
+    "given": "Gareth"
+   },
+   {
+    "family": "Witten",
+    "given": "Daniela"
+   },
+   {
+    "family": "Hastie",
+    "given": "Trevor"
+   },
+   {
+    "family": "Tibshirani",
+    "given": "Robert"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2013
+    ]
+   ]
+  },
+  "publisher": "Springer",
+  "id": "james2013introduction",
+  "lab": {
+   "work": "lab:work/james2013introduction",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ }
+]

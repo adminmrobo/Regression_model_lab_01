@@ -1,0 +1,766 @@
+{
+ "version": "1.0",
+ "page": "part3_resid",
+ "nodes": [
+  {
+   "id": "lab:concept/residual-plot",
+   "type": "Method",
+   "label": {
+    "ko": "잔차-예측값 그림",
+    "en": "Residuals vs fitted plot"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch10",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "잔차를 예측값 순서로 그려 모양을 보는 점검"
+   }
+  },
+  {
+   "id": "lab:concept/linearity",
+   "type": "Concept",
+   "label": {
+    "ko": "선형성 가정",
+    "en": "Linearity"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch10",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "관계의 모양이 직선(β에 대해 일차)이라는 가정"
+   }
+  },
+  {
+   "id": "lab:concept/ols-assumptions",
+   "type": "Concept",
+   "label": {
+    "ko": "회귀의 가정(LINE + 다중공선성 없음)",
+    "en": "OLS assumptions"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch11",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "선형성·독립·정규성·등분산, 단서가 여럿이면 다중공선성 없음"
+   }
+  },
+  {
+   "id": "lab:concept/homoscedasticity",
+   "type": "Concept",
+   "label": {
+    "ko": "등분산",
+    "en": "Homoscedasticity"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch11",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "잔차의 흩어짐 폭이 어디서나 비슷함"
+   }
+  },
+  {
+   "id": "lab:concept/normality",
+   "type": "Concept",
+   "label": {
+    "ko": "정규성",
+    "en": "Normality of residuals"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch11",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "잔차가 종 모양으로 흩어짐"
+   }
+  },
+  {
+   "id": "lab:concept/independence",
+   "type": "Concept",
+   "label": {
+    "ko": "독립",
+    "en": "Independence of errors"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch11",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "잔차끼리 줄줄이 이어지지 않음"
+   }
+  },
+  {
+   "id": "lab:concept/durbin-watson",
+   "type": "Metric",
+   "label": {
+    "ko": "더빈-왓슨 값",
+    "en": "Durbin-Watson statistic"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch11",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "Σ(이웃 잔차 차)² ÷ Σ잔차². 2 근처가 정상"
+   }
+  },
+  {
+   "id": "lab:concept/transformation",
+   "type": "Method",
+   "label": {
+    "ko": "로그 변환",
+    "en": "Log transformation"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch12",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "곱셈으로 느는 관계를 덧셈 직선으로 바꿈"
+   }
+  },
+  {
+   "id": "lab:concept/polynomial",
+   "type": "Method",
+   "label": {
+    "ko": "다항 회귀",
+    "en": "Polynomial regression"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch12",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "x², x³ 열을 더해 곡선을 맞추는 선형 회귀"
+   }
+  },
+  {
+   "id": "lab:concept/leverage",
+   "type": "Metric",
+   "label": {
+    "ko": "지렛대(h)",
+    "en": "Leverage"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch13",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "x가 평균에서 멀수록 큰, 직선을 움직이는 힘"
+   }
+  },
+  {
+   "id": "lab:concept/cooks-distance",
+   "type": "Metric",
+   "label": {
+    "ko": "쿡의 거리",
+    "en": "Cook's distance"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch13",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "그 점을 빼면 예측이 얼마나 바뀌나"
+   }
+  },
+  {
+   "id": "lab:concept/influential-point",
+   "type": "Limitation",
+   "label": {
+    "ko": "영향점·이상치",
+    "en": "Influential point"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch13",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "점 하나가 결과를 크게 바꾸는 문제"
+   }
+  },
+  {
+   "id": "lab:concept/simpson",
+   "type": "Limitation",
+   "label": {
+    "ko": "심슨의 역설",
+    "en": "Simpson's paradox"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch14",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "causality",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "숨은 무리를 무시하면 관계 방향이 뒤집힘"
+   }
+  },
+  {
+   "id": "lab:concept/confounder",
+   "type": "Concept",
+   "label": {
+    "ko": "교란 변수",
+    "en": "Confounder"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch14",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "causality",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "두 숫자에 함께 영향을 주는 숨은 원인"
+   }
+  },
+  {
+   "id": "lab:concept/corr-not-cause",
+   "type": "Claim",
+   "label": {
+    "ko": "상관은 인과가 아니다",
+    "en": "Correlation is not causation"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch14",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "causality",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "함께 움직인다고 원인이라 할 수 없음"
+   }
+  },
+  {
+   "id": "lab:concept/seesaw-analogy",
+   "type": "Analogy",
+   "label": {
+    "ko": "시소의 끝자리",
+    "en": "Seesaw analogy"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch13",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "diagnostics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "끝에 앉은 아이(x가 먼 점)가 시소를 크게 움직임"
+   }
+  },
+  {
+   "id": "lab:simulation/part3_resid-ch10",
+   "type": "Simulation",
+   "label": {
+    "ko": "직선과 곡선의 잔차 그림 비교",
+    "en": "ch10 experiment"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch10-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part3_resid-ch10-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "잔차 그림이 뚜렷한 U자 모양이에요. 가장 알맞은 해석은?",
+    "en": "ch10 quiz"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch10-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part3_resid-ch11",
+   "type": "Simulation",
+   "label": {
+    "ko": "세 데이터로 등분산·정규성·독립 점검하기",
+    "en": "ch11 experiment"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch11-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part3_resid-ch11-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "날짜 순서 데이터의 더빈-왓슨 값이 0.4예요. 무슨 뜻일까요?",
+    "en": "ch11 quiz"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch11-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part3_resid-ch12",
+   "type": "Simulation",
+   "label": {
+    "ko": "변환과 다항식으로 잔차 고치기",
+    "en": "ch12 experiment"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch12-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part3_resid-ch12-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "log y = 2 + 0.1x 모델에서 x가 1 늘면 y는 대략?",
+    "en": "ch12 quiz"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch12-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part3_resid-ch13",
+   "type": "Simulation",
+   "label": {
+    "ko": "점 하나를 끌어서 직선 흔들기",
+    "en": "ch13 experiment"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch13-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part3_resid-ch13-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "잔차가 똑같이 큰 점 두 개 중, 직선을 더 크게 바꾸는 점은?",
+    "en": "ch13 quiz"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch13-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part3_resid-ch14",
+   "type": "Simulation",
+   "label": {
+    "ko": "무리를 무시할 때와 나눠 볼 때",
+    "en": "ch14 experiment"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch14-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part3_resid-ch14-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "전체로는 기울기 +, 무리마다는 기울기 −인 현상을 무엇이라 하나요?",
+    "en": "ch14 quiz"
+   },
+   "page": "part3_resid",
+   "anchor": "#ch14-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/linearity2026infographic",
+   "type": "Work",
+   "label": {
+    "ko": "「Multiple Regression Assumption #1 Linearity」",
+    "en": "Multiple Regression Assumption #1: Linearity"
+   },
+   "page": "part3_resid",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/datainterview2026regression",
+   "type": "Work",
+   "label": {
+    "ko": "DataInterview 「Regression Models」·「Linear Regression」",
+    "en": "Regression Models; Linear Regression"
+   },
+   "page": "part3_resid",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/insightforge2026ols",
+   "type": "Work",
+   "label": {
+    "ko": "Insightforge 「OLS: The Engine of Linear Regression」",
+    "en": "Ordinary Least Squares (OLS): The Engine of Linear Regression"
+   },
+   "page": "part3_resid",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/james2013introduction",
+   "type": "Work",
+   "label": {
+    "ko": "James 외 (2013) ISLR",
+    "en": "An Introduction to Statistical Learning"
+   },
+   "page": "part3_resid",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/residual-plot",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part3_resid-ch10",
+   "anchor": "#ch10-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part3_resid-ch10-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/residual-plot",
+   "anchor": "#ch10-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ols-assumptions",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part3_resid-ch11",
+   "anchor": "#ch11-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part3_resid-ch11-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/ols-assumptions",
+   "anchor": "#ch11-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/transformation",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part3_resid-ch12",
+   "anchor": "#ch12-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part3_resid-ch12-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/transformation",
+   "anchor": "#ch12-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/influential-point",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part3_resid-ch13",
+   "anchor": "#ch13-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part3_resid-ch13-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/influential-point",
+   "anchor": "#ch13-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/simpson",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part3_resid-ch14",
+   "anchor": "#ch14-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part3_resid-ch14-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/simpson",
+   "anchor": "#ch14-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/residual",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/residual-plot",
+   "anchor": "#ch10",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/residual-plot",
+   "p": "lab:assesses",
+   "o": "lab:concept/linearity",
+   "anchor": "#ch10",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/linearity",
+   "p": "lab:partOf",
+   "o": "lab:concept/ols-assumptions",
+   "anchor": "#ch11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/homoscedasticity",
+   "p": "lab:partOf",
+   "o": "lab:concept/ols-assumptions",
+   "anchor": "#ch11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/normality",
+   "p": "lab:partOf",
+   "o": "lab:concept/ols-assumptions",
+   "anchor": "#ch11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/independence",
+   "p": "lab:partOf",
+   "o": "lab:concept/ols-assumptions",
+   "anchor": "#ch11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/durbin-watson",
+   "p": "lab:assesses",
+   "o": "lab:concept/independence",
+   "anchor": "#ch11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/linearity",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/polynomial",
+   "anchor": "#ch12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/homoscedasticity",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/transformation",
+   "anchor": "#ch12",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/least-squares",
+   "p": "lab:hasLimitation",
+   "o": "lab:concept/influential-point",
+   "anchor": "#ch13",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/leverage",
+   "p": "lab:partOf",
+   "o": "lab:concept/cooks-distance",
+   "anchor": "#ch13",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/seesaw-analogy",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/leverage",
+   "anchor": "#ch13",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/confounder",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/simpson",
+   "anchor": "#ch14",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/corr-not-cause",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/confounder",
+   "anchor": "#ch14",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/correlation",
+   "p": "lab:hasLimitation",
+   "o": "lab:concept/corr-not-cause",
+   "anchor": "#ch14",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ols-assumptions",
+   "p": "lab:broader",
+   "o": "lab:topic/diagnostics",
+   "anchor": "#ch11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/simpson",
+   "p": "lab:broader",
+   "o": "lab:topic/causality",
+   "anchor": "#ch14",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/linearity",
+   "p": "lab:assertedIn",
+   "o": "lab:work/linearity2026infographic",
+   "anchor": "#ch10",
+   "confidence": "high"
+  }
+ ]
+}

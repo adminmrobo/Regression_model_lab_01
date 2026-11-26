@@ -1,0 +1,861 @@
+{
+ "version": "1.0",
+ "page": "part2_table",
+ "nodes": [
+  {
+   "id": "lab:concept/multiple-regression",
+   "type": "Method",
+   "label": {
+    "ko": "다중 선형 회귀",
+    "en": "Multiple linear regression"
+   },
+   "page": "part2_table",
+   "anchor": "#ch5",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "단서 여러 개에 기울기를 하나씩 두고 한꺼번에 맞추는 회귀"
+   }
+  },
+  {
+   "id": "lab:concept/ceteris-paribus",
+   "type": "Concept",
+   "label": {
+    "ko": "다른 단서를 그대로 두면",
+    "en": "Holding others constant"
+   },
+   "page": "part2_table",
+   "anchor": "#ch5",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "다중회귀 계수의 뜻: 다른 단서가 같을 때의 평균 차이"
+   }
+  },
+  {
+   "id": "lab:concept/design-matrix",
+   "type": "Term",
+   "label": {
+    "ko": "숫자 표 X(설계 행렬)",
+    "en": "Design matrix"
+   },
+   "page": "part2_table",
+   "anchor": "#ch6",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "linear-algebra",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "행 = 데이터 하나, 열 = 단서 하나(맨 앞은 1)"
+   }
+  },
+  {
+   "id": "lab:concept/normal-equation",
+   "type": "Method",
+   "label": {
+    "ko": "정규방정식 β = (XᵀX)⁻¹Xᵀy",
+    "en": "Normal equation"
+   },
+   "page": "part2_table",
+   "anchor": "#ch6",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "linear-algebra",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "잔차가 단서 열과 수직이라는 조건을 풀어 얻는 최소제곱 답"
+   }
+  },
+  {
+   "id": "lab:concept/projection",
+   "type": "Concept",
+   "label": {
+    "ko": "그림자(직교 사영)",
+    "en": "Orthogonal projection"
+   },
+   "page": "part2_table",
+   "anchor": "#ch6",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "linear-algebra",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "최소제곱 예측은 y를 모델 공간에 수직으로 내린 그림자"
+   }
+  },
+  {
+   "id": "lab:concept/standard-error",
+   "type": "Metric",
+   "label": {
+    "ko": "표준오차(SE)",
+    "en": "Standard error"
+   },
+   "page": "part2_table",
+   "anchor": "#ch7",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "statistics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "데이터를 다시 모으면 계수가 흔들릴 폭"
+   }
+  },
+  {
+   "id": "lab:concept/t-value",
+   "type": "Metric",
+   "label": {
+    "ko": "t값",
+    "en": "t-statistic"
+   },
+   "page": "part2_table",
+   "anchor": "#ch7",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "statistics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "계수 ÷ 표준오차"
+   }
+  },
+  {
+   "id": "lab:concept/p-value",
+   "type": "Metric",
+   "label": {
+    "ko": "p값",
+    "en": "p-value"
+   },
+   "page": "part2_table",
+   "anchor": "#ch7",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "statistics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "영향이 0이라면 이만큼 또는 더 큰 t가 나올 확률"
+   }
+  },
+  {
+   "id": "lab:concept/ci",
+   "type": "Metric",
+   "label": {
+    "ko": "95% 신뢰구간",
+    "en": "Confidence interval"
+   },
+   "page": "part2_table",
+   "anchor": "#ch7",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "statistics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "대략 계수 ± 2 × 표준오차"
+   }
+  },
+  {
+   "id": "lab:concept/ols-table",
+   "type": "Concept",
+   "label": {
+    "ko": "회귀분석 결과표",
+    "en": "OLS summary table"
+   },
+   "page": "part2_table",
+   "anchor": "#ch7",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "statistics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "계수·표준오차·t·p·신뢰구간·R²·AIC를 모은 표"
+   }
+  },
+  {
+   "id": "lab:concept/adj-r2",
+   "type": "Metric",
+   "label": {
+    "ko": "수정 R²",
+    "en": "Adjusted R-squared"
+   },
+   "page": "part2_table",
+   "anchor": "#ch8",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "evaluation",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "단서 개수 벌점을 넣은 R²"
+   }
+  },
+  {
+   "id": "lab:concept/aic",
+   "type": "Metric",
+   "label": {
+    "ko": "AIC",
+    "en": "Akaike information criterion"
+   },
+   "page": "part2_table",
+   "anchor": "#ch8",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "evaluation",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "잘 맞음 + 단서 개수 벌점, 낮을수록 좋음"
+   }
+  },
+  {
+   "id": "lab:concept/model-selection",
+   "type": "Method",
+   "label": {
+    "ko": "단서 고르기(단계적 선택)",
+    "en": "Model selection"
+   },
+   "page": "part2_table",
+   "anchor": "#ch8",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "evaluation",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "AIC 등으로 단서 조합을 고름"
+   }
+  },
+  {
+   "id": "lab:concept/multicollinearity",
+   "type": "Limitation",
+   "label": {
+    "ko": "다중공선성",
+    "en": "Multicollinearity"
+   },
+   "page": "part2_table",
+   "anchor": "#ch9",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "단서끼리 많이 겹쳐 계수가 흔들리는 문제"
+   }
+  },
+  {
+   "id": "lab:concept/vif",
+   "type": "Metric",
+   "label": {
+    "ko": "VIF",
+    "en": "Variance inflation factor"
+   },
+   "page": "part2_table",
+   "anchor": "#ch9",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "1 ÷ (1 − R²ⱼ). 흔들림이 몇 배 커졌나"
+   }
+  },
+  {
+   "id": "lab:concept/linear-independence",
+   "type": "Concept",
+   "label": {
+    "ko": "선형 독립",
+    "en": "Linear independence"
+   },
+   "page": "part2_table",
+   "anchor": "#ch9",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "linear-algebra",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "어떤 단서도 나머지의 일차식으로 정확히 나타나지 않음"
+   }
+  },
+  {
+   "id": "lab:concept/pca",
+   "type": "Method",
+   "label": {
+    "ko": "주성분 분석(PCA)",
+    "en": "Principal component analysis"
+   },
+   "page": "part2_table",
+   "anchor": "#ch9",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "dimensionality-reduction",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "겹치는 단서를 가장 넓게 퍼진 방향으로 묶음"
+   }
+  },
+  {
+   "id": "lab:concept/shadow-analogy",
+   "type": "Analogy",
+   "label": {
+    "ko": "벽에 비친 그림자",
+    "en": "Shadow analogy"
+   },
+   "page": "part2_table",
+   "anchor": "#ch6",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "linear-algebra",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "가장 가까운 자리 = 수직으로 내린 자리"
+   }
+  },
+  {
+   "id": "lab:simulation/part2_table-ch5",
+   "type": "Simulation",
+   "label": {
+    "ko": "평면을 돌려 보고 예측하기",
+    "en": "ch5 experiment"
+   },
+   "page": "part2_table",
+   "anchor": "#ch5-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part2_table-ch5-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "ŷ = 25.57 − 5.73 × 무게 − 0.0197 × 마력에서 −5.73의 뜻은?",
+    "en": "ch5 quiz"
+   },
+   "page": "part2_table",
+   "anchor": "#ch5-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part2_table-ch6",
+   "type": "Simulation",
+   "label": {
+    "ko": "3차원에서 그림자 찾기 (데이터 3개 = 3차원의 점 하나)",
+    "en": "ch6 experiment"
+   },
+   "page": "part2_table",
+   "anchor": "#ch6-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part2_table-ch6-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "y = (1, 5, 6)을 상수 c 하나로 맞추면 최소제곱 답 c는?",
+    "en": "ch6 quiz"
+   },
+   "page": "part2_table",
+   "anchor": "#ch6-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part2_table-ch7",
+   "type": "Simulation",
+   "label": {
+    "ko": "데이터 개수와 잡음에 따라 결과표 다시 만들기",
+    "en": "ch7 experiment"
+   },
+   "page": "part2_table",
+   "anchor": "#ch7-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part2_table-ch7-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "계수 0.8, 표준오차 0.5이면 t는? 그리고 판단은?",
+    "en": "ch7 quiz"
+   },
+   "page": "part2_table",
+   "anchor": "#ch7-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part2_table-ch8",
+   "type": "Simulation",
+   "label": {
+    "ko": "엉뚱한 단서를 하나씩 넣어 보기",
+    "en": "ch8 experiment"
+   },
+   "page": "part2_table",
+   "anchor": "#ch8-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part2_table-ch8-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "단서를 하나 더 넣었더니 R²는 0.80 → 0.81, 수정 R²는 0.79 → 0.78이 됐어요. 판단은?",
+    "en": "ch8 quiz"
+   },
+   "page": "part2_table",
+   "anchor": "#ch8-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part2_table-ch9",
+   "type": "Simulation",
+   "label": {
+    "ko": "겹치는 두 단서와 흔들리는 계수",
+    "en": "ch9 experiment"
+   },
+   "page": "part2_table",
+   "anchor": "#ch9-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part2_table-ch9-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "두 단서의 상관이 0.95일 때(단서 둘) VIF는 대략?",
+    "en": "ch9 quiz"
+   },
+   "page": "part2_table",
+   "anchor": "#ch9-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/datainterview2026regression",
+   "type": "Work",
+   "label": {
+    "ko": "DataInterview 「Regression Models」·「Linear Regression」",
+    "en": "Regression Models; Linear Regression"
+   },
+   "page": "part2_table",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/eeanimation2026ls",
+   "type": "Work",
+   "label": {
+    "ko": "eeanimation 「Least-Squares Estimation」",
+    "en": "Least-Squares Estimation"
+   },
+   "page": "part2_table",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/insightforge2026ols",
+   "type": "Work",
+   "label": {
+    "ko": "Insightforge 「OLS: The Engine of Linear Regression」",
+    "en": "Ordinary Least Squares (OLS): The Engine of Linear Regression"
+   },
+   "page": "part2_table",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/peter2026pca",
+   "type": "Work",
+   "label": {
+    "ko": "Joshua Salami Peter 「PCA」",
+    "en": "Principal Component Analysis (PCA)"
+   },
+   "page": "part2_table",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/lee2026intuition",
+   "type": "Work",
+   "label": {
+    "ko": "Matt Lee 「오늘의 수학적 직관」",
+    "en": "오늘의 수학적 직관"
+   },
+   "page": "part2_table",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/james2013introduction",
+   "type": "Work",
+   "label": {
+    "ko": "James 외 (2013) ISLR",
+    "en": "An Introduction to Statistical Learning"
+   },
+   "page": "part2_table",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/multiple-regression",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part2_table-ch5",
+   "anchor": "#ch5-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part2_table-ch5-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/multiple-regression",
+   "anchor": "#ch5-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/normal-equation",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part2_table-ch6",
+   "anchor": "#ch6-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part2_table-ch6-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/normal-equation",
+   "anchor": "#ch6-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ols-table",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part2_table-ch7",
+   "anchor": "#ch7-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part2_table-ch7-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/ols-table",
+   "anchor": "#ch7-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/model-selection",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part2_table-ch8",
+   "anchor": "#ch8-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part2_table-ch8-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/model-selection",
+   "anchor": "#ch8-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/multicollinearity",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part2_table-ch9",
+   "anchor": "#ch9-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part2_table-ch9-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/multicollinearity",
+   "anchor": "#ch9-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/least-squares",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/multiple-regression",
+   "anchor": "#ch5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ceteris-paribus",
+   "p": "lab:partOf",
+   "o": "lab:concept/multiple-regression",
+   "anchor": "#ch5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/design-matrix",
+   "p": "lab:partOf",
+   "o": "lab:concept/normal-equation",
+   "anchor": "#ch6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/projection",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/normal-equation",
+   "anchor": "#ch6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/shadow-analogy",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/projection",
+   "anchor": "#ch6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/standard-error",
+   "p": "lab:partOf",
+   "o": "lab:concept/ols-table",
+   "anchor": "#ch7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/t-value",
+   "p": "lab:partOf",
+   "o": "lab:concept/ols-table",
+   "anchor": "#ch7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/p-value",
+   "p": "lab:partOf",
+   "o": "lab:concept/ols-table",
+   "anchor": "#ch7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ci",
+   "p": "lab:partOf",
+   "o": "lab:concept/ols-table",
+   "anchor": "#ch7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/r-squared",
+   "p": "lab:hasLimitation",
+   "o": "lab:concept/adj-r2",
+   "anchor": "#ch8",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/aic",
+   "p": "lab:partOf",
+   "o": "lab:concept/model-selection",
+   "anchor": "#ch8",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/adj-r2",
+   "p": "lab:partOf",
+   "o": "lab:concept/model-selection",
+   "anchor": "#ch8",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/multiple-regression",
+   "p": "lab:hasLimitation",
+   "o": "lab:concept/multicollinearity",
+   "anchor": "#ch9",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/multicollinearity",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/pca",
+   "anchor": "#ch9",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/vif",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/multicollinearity",
+   "anchor": "#ch9",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/linear-independence",
+   "p": "lab:contrastsWith",
+   "o": "lab:concept/multicollinearity",
+   "anchor": "#ch9",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/multiple-regression",
+   "p": "lab:broader",
+   "o": "lab:topic/regression",
+   "anchor": "#ch5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pca",
+   "p": "lab:broader",
+   "o": "lab:topic/dimensionality-reduction",
+   "anchor": "#ch9",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/projection",
+   "p": "lab:assertedIn",
+   "o": "lab:work/eeanimation2026ls",
+   "anchor": "#ch6",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ols-table",
+   "p": "lab:assertedIn",
+   "o": "lab:work/datainterview2026regression",
+   "anchor": "#ch7",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/linear-independence",
+   "p": "lab:assertedIn",
+   "o": "lab:work/lee2026intuition",
+   "anchor": "#ch9",
+   "confidence": "high"
+  }
+ ]
+}

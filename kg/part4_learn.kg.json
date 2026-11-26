@@ -1,0 +1,839 @@
+{
+ "version": "1.0",
+ "page": "part4_learn",
+ "nodes": [
+  {
+   "id": "lab:concept/loss-function",
+   "type": "Concept",
+   "label": {
+    "ko": "손실 함수(MSE)",
+    "en": "Loss function"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch15",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "optimization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "빗나감을 하나의 숫자로 모은 것. 경사 하강이 줄이는 대상"
+   }
+  },
+  {
+   "id": "lab:concept/gradient-descent",
+   "type": "Method",
+   "label": {
+    "ko": "경사 하강",
+    "en": "Gradient descent"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch15",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "optimization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "손실의 기울기 반대 방향으로 계수를 조금씩 옮김"
+   }
+  },
+  {
+   "id": "lab:concept/gradient",
+   "type": "Concept",
+   "label": {
+    "ko": "기울기(미분·그레이디언트)",
+    "en": "Gradient"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch15",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "optimization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "계수를 살짝 바꿀 때 손실이 변하는 비율"
+   }
+  },
+  {
+   "id": "lab:concept/learning-rate",
+   "type": "Concept",
+   "label": {
+    "ko": "학습률 η",
+    "en": "Learning rate"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch16",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "optimization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "한 걸음의 크기. 너무 크면 발산"
+   }
+  },
+  {
+   "id": "lab:concept/divergence",
+   "type": "Limitation",
+   "label": {
+    "ko": "발산",
+    "en": "Divergence"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch16",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "optimization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "학습률이 커서 걸을수록 바닥에서 멀어짐"
+   }
+  },
+  {
+   "id": "lab:concept/sgd",
+   "type": "Method",
+   "label": {
+    "ko": "확률적 경사 하강(SGD)",
+    "en": "Stochastic gradient descent"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch17",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "optimization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "일부 데이터로 기울기를 어림해 걷는 경사 하강"
+   }
+  },
+  {
+   "id": "lab:concept/minibatch",
+   "type": "Concept",
+   "label": {
+    "ko": "미니배치와 에포크",
+    "en": "Mini-batch and epoch"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch17",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "optimization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "한 걸음에 쓰는 묶음, 데이터 전체 한 바퀴"
+   }
+  },
+  {
+   "id": "lab:concept/overfitting",
+   "type": "Limitation",
+   "label": {
+    "ko": "과적합(외우기)",
+    "en": "Overfitting"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch18",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "generalization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "훈련 빗나감은 작고 처음 보는 데이터 빗나감은 큼"
+   }
+  },
+  {
+   "id": "lab:concept/underfitting",
+   "type": "Limitation",
+   "label": {
+    "ko": "과소적합",
+    "en": "Underfitting"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch18",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "generalization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "모델이 너무 단순해 둘 다 빗나감이 큼"
+   }
+  },
+  {
+   "id": "lab:concept/bias-variance",
+   "type": "Concept",
+   "label": {
+    "ko": "편향-분산 균형",
+    "en": "Bias-variance tradeoff"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch18",
+   "level": 3,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "generalization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "단순하면 편향, 복잡하면 분산이 커짐"
+   }
+  },
+  {
+   "id": "lab:concept/regularization",
+   "type": "Concept",
+   "label": {
+    "ko": "규제(벌점)",
+    "en": "Regularization"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch19",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "generalization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "손실에 계수 크기 벌점을 더해 과적합을 막음"
+   }
+  },
+  {
+   "id": "lab:concept/ridge",
+   "type": "Method",
+   "label": {
+    "ko": "릿지 회귀(L2)",
+    "en": "Ridge regression"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch19",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regularization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "+ λΣβ². 계수를 줄이되 0으로 만들진 않음"
+   }
+  },
+  {
+   "id": "lab:concept/lasso",
+   "type": "Method",
+   "label": {
+    "ko": "라쏘 회귀(L1)",
+    "en": "Lasso regression"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch20",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regularization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "+ λΣ|β|. 작은 계수를 정확히 0으로"
+   }
+  },
+  {
+   "id": "lab:concept/elastic-net",
+   "type": "Method",
+   "label": {
+    "ko": "엘라스틱넷",
+    "en": "Elastic net"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch20",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regularization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "라쏘와 릿지 벌점을 α 비율로 섞음"
+   }
+  },
+  {
+   "id": "lab:concept/mountain-analogy",
+   "type": "Analogy",
+   "label": {
+    "ko": "안개 낀 산에서 내려오기",
+    "en": "Foggy mountain analogy"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch15",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "optimization",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "발밑 기울기만 보고 내리막으로 걷기"
+   }
+  },
+  {
+   "id": "lab:simulation/part4_learn-ch15",
+   "type": "Simulation",
+   "label": {
+    "ko": "한 걸음씩 골짜기 내려가기",
+    "en": "ch15 experiment"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch15-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part4_learn-ch15-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "지금 자리의 손실 기울기가 +12, 학습률 0.1이면 β는 어떻게 바뀌나요?",
+    "en": "ch15 quiz"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch15-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part4_learn-ch16",
+   "type": "Simulation",
+   "label": {
+    "ko": "학습률에 따라 내려가는 모습",
+    "en": "ch16 experiment"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch16-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part4_learn-ch16-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "걸음마다 손실이 점점 커져요. 가장 먼저 의심할 것은?",
+    "en": "ch16 quiz"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch16-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part4_learn-ch17",
+   "type": "Simulation",
+   "label": {
+    "ko": "묶음 크기에 따른 발자국",
+    "en": "ch17 experiment"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch17-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part4_learn-ch17-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "데이터 1,000개, 묶음 크기 50이면 한 에포크에 몇 걸음?",
+    "en": "ch17 quiz"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch17-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part4_learn-ch18",
+   "type": "Simulation",
+   "label": {
+    "ko": "차수를 올리며 훈련과 처음 보는 데이터 비교",
+    "en": "ch18 experiment"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch18-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part4_learn-ch18-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "훈련 빗나감은 아주 작은데 처음 보는 데이터 빗나감이 커요. 이 상태는?",
+    "en": "ch18 quiz"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch18-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part4_learn-ch19",
+   "type": "Simulation",
+   "label": {
+    "ko": "벌점 λ로 출렁이는 곡선 다스리기 (9차 곡선)",
+    "en": "ch19 experiment"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch19-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part4_learn-ch19-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "릿지에서 λ를 아주 크게 하면 계수들은?",
+    "en": "ch19 quiz"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch19-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part4_learn-ch20",
+   "type": "Simulation",
+   "label": {
+    "ko": "라쏘와 엘라스틱넷으로 단서 고르기",
+    "en": "ch20 experiment"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch20-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part4_learn-ch20-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "단서를 0으로 만들어 골라내는 벌점은?",
+    "en": "ch20 quiz"
+   },
+   "page": "part4_learn",
+   "anchor": "#ch20-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/archseries2026regression",
+   "type": "Work",
+   "label": {
+    "ko": "The Architecture Series 「Types of Regression Models」",
+    "en": "Types of Regression Models Every Quant Should Know"
+   },
+   "page": "part4_learn",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/regalgos2026",
+   "type": "Work",
+   "label": {
+    "ko": "「Regression Algorithms in Machine Learning」",
+    "en": "Regression Algorithms in Machine Learning"
+   },
+   "page": "part4_learn",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/hoerl1970ridge",
+   "type": "Work",
+   "label": {
+    "ko": "Hoerl & Kennard (1970)",
+    "en": "Ridge regression: Biased estimation for nonorthogonal problems"
+   },
+   "page": "part4_learn",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/tibshirani1996lasso",
+   "type": "Work",
+   "label": {
+    "ko": "Tibshirani (1996)",
+    "en": "Regression shrinkage and selection via the lasso"
+   },
+   "page": "part4_learn",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/zou2005regularization",
+   "type": "Work",
+   "label": {
+    "ko": "Zou & Hastie (2005)",
+    "en": "Regularization and variable selection via the elastic net"
+   },
+   "page": "part4_learn",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/james2013introduction",
+   "type": "Work",
+   "label": {
+    "ko": "James 외 (2013) ISLR",
+    "en": "An Introduction to Statistical Learning"
+   },
+   "page": "part4_learn",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/gradient-descent",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part4_learn-ch15",
+   "anchor": "#ch15-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part4_learn-ch15-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/gradient-descent",
+   "anchor": "#ch15-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/learning-rate",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part4_learn-ch16",
+   "anchor": "#ch16-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part4_learn-ch16-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/learning-rate",
+   "anchor": "#ch16-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sgd",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part4_learn-ch17",
+   "anchor": "#ch17-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part4_learn-ch17-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/sgd",
+   "anchor": "#ch17-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/overfitting",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part4_learn-ch18",
+   "anchor": "#ch18-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part4_learn-ch18-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/overfitting",
+   "anchor": "#ch18-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ridge",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part4_learn-ch19",
+   "anchor": "#ch19-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part4_learn-ch19-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/ridge",
+   "anchor": "#ch19-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/lasso",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part4_learn-ch20",
+   "anchor": "#ch20-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part4_learn-ch20-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/lasso",
+   "anchor": "#ch20-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/loss-function",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/gradient-descent",
+   "anchor": "#ch15",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/gradient",
+   "p": "lab:partOf",
+   "o": "lab:concept/gradient-descent",
+   "anchor": "#ch15",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/mountain-analogy",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/gradient-descent",
+   "anchor": "#ch15",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/learning-rate",
+   "p": "lab:partOf",
+   "o": "lab:concept/gradient-descent",
+   "anchor": "#ch16",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/learning-rate",
+   "p": "lab:hasLimitation",
+   "o": "lab:concept/divergence",
+   "anchor": "#ch16",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sgd",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/gradient-descent",
+   "anchor": "#ch17",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/minibatch",
+   "p": "lab:partOf",
+   "o": "lab:concept/sgd",
+   "anchor": "#ch17",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/polynomial",
+   "p": "lab:hasLimitation",
+   "o": "lab:concept/overfitting",
+   "anchor": "#ch18",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/overfitting",
+   "p": "lab:contrastsWith",
+   "o": "lab:concept/underfitting",
+   "anchor": "#ch18",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/bias-variance",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/overfitting",
+   "anchor": "#ch18",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/overfitting",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/regularization",
+   "anchor": "#ch19",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ridge",
+   "p": "lab:partOf",
+   "o": "lab:concept/regularization",
+   "anchor": "#ch19",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/lasso",
+   "p": "lab:partOf",
+   "o": "lab:concept/regularization",
+   "anchor": "#ch20",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/elastic-net",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/lasso",
+   "anchor": "#ch20",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/elastic-net",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/ridge",
+   "anchor": "#ch20",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/multicollinearity",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/ridge",
+   "anchor": "#ch19",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/gradient-descent",
+   "p": "lab:broader",
+   "o": "lab:topic/optimization",
+   "anchor": "#ch15",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/regularization",
+   "p": "lab:broader",
+   "o": "lab:topic/generalization",
+   "anchor": "#ch19",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ridge",
+   "p": "lab:assertedIn",
+   "o": "lab:work/hoerl1970ridge",
+   "anchor": "#ch19",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/lasso",
+   "p": "lab:assertedIn",
+   "o": "lab:work/tibshirani1996lasso",
+   "anchor": "#ch20",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/elastic-net",
+   "p": "lab:assertedIn",
+   "o": "lab:work/zou2005regularization",
+   "anchor": "#ch20",
+   "confidence": "high"
+  }
+ ]
+}

@@ -1,0 +1,796 @@
+{
+ "version": "1.0",
+ "page": "part6_family",
+ "nodes": [
+  {
+   "id": "lab:concept/logistic",
+   "type": "Method",
+   "label": {
+    "ko": "로지스틱 회귀",
+    "en": "Logistic regression"
+   },
+   "page": "part6_family",
+   "anchor": "#ch26",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "glm",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "직선 점수를 S자로 접어 확률을 맞힘"
+   }
+  },
+  {
+   "id": "lab:concept/sigmoid",
+   "type": "Concept",
+   "label": {
+    "ko": "시그모이드 함수",
+    "en": "Sigmoid function"
+   },
+   "page": "part6_family",
+   "anchor": "#ch26",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "glm",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "1 ÷ (1 + e^−z). 어떤 수든 0~1로"
+   }
+  },
+  {
+   "id": "lab:concept/log-odds",
+   "type": "Concept",
+   "label": {
+    "ko": "로그 승산",
+    "en": "Log-odds"
+   },
+   "page": "part6_family",
+   "anchor": "#ch26",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "glm",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "log(p ÷ (1 − p)). 로지스틱에서 직선이 되는 값"
+   }
+  },
+  {
+   "id": "lab:concept/odds-ratio",
+   "type": "Metric",
+   "label": {
+    "ko": "승산비",
+    "en": "Odds ratio"
+   },
+   "page": "part6_family",
+   "anchor": "#ch26",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "glm",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "e^β. x가 1 늘 때 승산이 몇 배"
+   }
+  },
+  {
+   "id": "lab:concept/softmax",
+   "type": "Method",
+   "label": {
+    "ko": "소프트맥스 회귀",
+    "en": "Softmax regression"
+   },
+   "page": "part6_family",
+   "anchor": "#ch27",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "glm",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "점수 여러 개를 합이 1인 확률로"
+   }
+  },
+  {
+   "id": "lab:concept/cross-entropy",
+   "type": "Metric",
+   "label": {
+    "ko": "교차 엔트로피",
+    "en": "Cross-entropy"
+   },
+   "page": "part6_family",
+   "anchor": "#ch27",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "glm",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "−log(정답의 확률). 확률 모델의 손실"
+   }
+  },
+  {
+   "id": "lab:concept/poisson",
+   "type": "Method",
+   "label": {
+    "ko": "포아송 회귀",
+    "en": "Poisson regression"
+   },
+   "page": "part6_family",
+   "anchor": "#ch28",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "glm",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "log(평균 개수)를 직선으로. 늘 양수"
+   }
+  },
+  {
+   "id": "lab:concept/glm",
+   "type": "Concept",
+   "label": {
+    "ko": "일반화 선형 모델(GLM)",
+    "en": "Generalized linear model"
+   },
+   "page": "part6_family",
+   "anchor": "#ch28",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "glm",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "직선 점수 + 연결 함수 + 알맞은 분포"
+   }
+  },
+  {
+   "id": "lab:concept/quantile",
+   "type": "Method",
+   "label": {
+    "ko": "분위수 회귀",
+    "en": "Quantile regression"
+   },
+   "page": "part6_family",
+   "anchor": "#ch29",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "quantile",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "τ 자리의 선을 핀볼 손실로 맞힘"
+   }
+  },
+  {
+   "id": "lab:concept/pinball",
+   "type": "Metric",
+   "label": {
+    "ko": "핀볼 손실",
+    "en": "Pinball loss"
+   },
+   "page": "part6_family",
+   "anchor": "#ch29",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "quantile",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "위 빗나감 × τ, 아래 빗나감 × (1 − τ)"
+   }
+  },
+  {
+   "id": "lab:concept/multilevel",
+   "type": "Method",
+   "label": {
+    "ko": "다층(혼합) 회귀",
+    "en": "Multilevel regression"
+   },
+   "page": "part6_family",
+   "anchor": "#ch30",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "multilevel",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "무리별 절편을 전체 평균 쪽으로 부분적으로 당김"
+   }
+  },
+  {
+   "id": "lab:concept/panel",
+   "type": "Method",
+   "label": {
+    "ko": "패널 회귀",
+    "en": "Panel regression"
+   },
+   "page": "part6_family",
+   "anchor": "#ch30",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "multilevel",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "대상 효과 μᵢ와 시점 효과 λₜ를 함께 넣음"
+   }
+  },
+  {
+   "id": "lab:concept/time-series-reg",
+   "type": "Method",
+   "label": {
+    "ko": "시계열 회귀",
+    "en": "Time-series regression"
+   },
+   "page": "part6_family",
+   "anchor": "#ch30",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "time-series",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "시차 단서(어제 값)로 이어지는 잔차를 설명"
+   }
+  },
+  {
+   "id": "lab:concept/brier",
+   "type": "Metric",
+   "label": {
+    "ko": "브라이어 점수",
+    "en": "Brier score"
+   },
+   "page": "part6_family",
+   "anchor": "#battle",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "evaluation",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "(예측 확률 − 실제 0·1)²의 평균"
+   }
+  },
+  {
+   "id": "lab:concept/partial-pooling-analogy",
+   "type": "Analogy",
+   "label": {
+    "ko": "작은 반 평균을 학교 평균 쪽으로",
+    "en": "Partial pooling analogy"
+   },
+   "page": "part6_family",
+   "anchor": "#ch30",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "multilevel",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "데이터가 적을수록 전체 쪽으로 더 당김"
+   }
+  },
+  {
+   "id": "lab:simulation/part6_family-ch26",
+   "type": "Simulation",
+   "label": {
+    "ko": "직선 대 S자 곡선으로 합격 확률 맞히기",
+    "en": "ch26 experiment"
+   },
+   "page": "part6_family",
+   "anchor": "#ch26-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part6_family-ch26-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "로지스틱 회귀에서 직선 점수 z = 0이면 확률은?",
+    "en": "ch26 quiz"
+   },
+   "page": "part6_family",
+   "anchor": "#ch26-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part6_family-ch27",
+   "type": "Simulation",
+   "label": {
+    "ko": "점수를 확률로 바꾸는 소프트맥스",
+    "en": "ch27 experiment"
+   },
+   "page": "part6_family",
+   "anchor": "#ch27-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part6_family-ch27-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "점수 (1, 1, 1)의 소프트맥스 확률은?",
+    "en": "ch27 quiz"
+   },
+   "page": "part6_family",
+   "anchor": "#ch27-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part6_family-ch28",
+   "type": "Simulation",
+   "label": {
+    "ko": "직선 대 포아송으로 손님 수 맞히기",
+    "en": "ch28 experiment"
+   },
+   "page": "part6_family",
+   "anchor": "#ch28-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part6_family-ch28-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "포아송 회귀 log λ = 1 + 0.2x 에서 x가 1 늘면 평균 개수는?",
+    "en": "ch28 quiz"
+   },
+   "page": "part6_family",
+   "anchor": "#ch28-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part6_family-ch29",
+   "type": "Simulation",
+   "label": {
+    "ko": "τ를 바꾸며 분위수 선 긋기",
+    "en": "ch29 experiment"
+   },
+   "page": "part6_family",
+   "anchor": "#ch29-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part6_family-ch29-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "τ = 0.8 선에서 실제가 선보다 5 위에 있으면 벌점은?",
+    "en": "ch29 quiz"
+   },
+   "page": "part6_family",
+   "anchor": "#ch29-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part6_family-ch30",
+   "type": "Simulation",
+   "label": {
+    "ko": "무리를 얼마나 묶을까, 어제를 넣을까",
+    "en": "ch30 experiment"
+   },
+   "page": "part6_family",
+   "anchor": "#ch30-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part6_family-ch30-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "다층 회귀에서 학생이 아주 적은 무리의 절편은 어떻게 되나요?",
+    "en": "ch30 quiz"
+   },
+   "page": "part6_family",
+   "anchor": "#ch30-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/datainterview2026regression",
+   "type": "Work",
+   "label": {
+    "ko": "DataInterview 「Regression Models」·「Linear Regression」",
+    "en": "Regression Models; Linear Regression"
+   },
+   "page": "part6_family",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/mltut2026regression",
+   "type": "Work",
+   "label": {
+    "ko": "MLTut 「Regression Models」",
+    "en": "Regression Models"
+   },
+   "page": "part6_family",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/mathemetica2026logistic",
+   "type": "Work",
+   "label": {
+    "ko": "@mathemetica 「Logistic & Softmax Regression」",
+    "en": "Logistic Regression and Softmax Regression"
+   },
+   "page": "part6_family",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/archseries2026regression",
+   "type": "Work",
+   "label": {
+    "ko": "The Architecture Series 「Types of Regression Models」",
+    "en": "Types of Regression Models Every Quant Should Know"
+   },
+   "page": "part6_family",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/nelder1972generalized",
+   "type": "Work",
+   "label": {
+    "ko": "Nelder & Wedderburn (1972)",
+    "en": "Generalized linear models"
+   },
+   "page": "part6_family",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/koenker1978regression",
+   "type": "Work",
+   "label": {
+    "ko": "Koenker & Bassett (1978)",
+    "en": "Regression quantiles"
+   },
+   "page": "part6_family",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/james2013introduction",
+   "type": "Work",
+   "label": {
+    "ko": "James 외 (2013) ISLR",
+    "en": "An Introduction to Statistical Learning"
+   },
+   "page": "part6_family",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/logistic",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part6_family-ch26",
+   "anchor": "#ch26-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part6_family-ch26-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/logistic",
+   "anchor": "#ch26-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/softmax",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part6_family-ch27",
+   "anchor": "#ch27-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part6_family-ch27-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/softmax",
+   "anchor": "#ch27-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/poisson",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part6_family-ch28",
+   "anchor": "#ch28-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part6_family-ch28-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/poisson",
+   "anchor": "#ch28-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/quantile",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part6_family-ch29",
+   "anchor": "#ch29-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part6_family-ch29-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/quantile",
+   "anchor": "#ch29-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/multilevel",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part6_family-ch30",
+   "anchor": "#ch30-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part6_family-ch30-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/multilevel",
+   "anchor": "#ch30-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sigmoid",
+   "p": "lab:partOf",
+   "o": "lab:concept/logistic",
+   "anchor": "#ch26",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/log-odds",
+   "p": "lab:partOf",
+   "o": "lab:concept/logistic",
+   "anchor": "#ch26",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/odds-ratio",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/logistic",
+   "anchor": "#ch26",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/logistic",
+   "p": "lab:broader",
+   "o": "lab:concept/glm",
+   "anchor": "#ch28",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/poisson",
+   "p": "lab:broader",
+   "o": "lab:concept/glm",
+   "anchor": "#ch28",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/softmax",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/logistic",
+   "anchor": "#ch27",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/cross-entropy",
+   "p": "lab:partOf",
+   "o": "lab:concept/softmax",
+   "anchor": "#ch27",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pinball",
+   "p": "lab:partOf",
+   "o": "lab:concept/quantile",
+   "anchor": "#ch29",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/homoscedasticity",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/quantile",
+   "anchor": "#ch29",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/simpson",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/multilevel",
+   "anchor": "#ch30",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/independence",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/time-series-reg",
+   "anchor": "#ch30",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/panel",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/multilevel",
+   "anchor": "#ch30",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/partial-pooling-analogy",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/multilevel",
+   "anchor": "#ch30",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/brier",
+   "p": "lab:assesses",
+   "o": "lab:concept/logistic",
+   "anchor": "#battle",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/glm",
+   "p": "lab:broader",
+   "o": "lab:topic/regression",
+   "anchor": "#ch28",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/glm",
+   "p": "lab:assertedIn",
+   "o": "lab:work/nelder1972generalized",
+   "anchor": "#ch28",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/quantile",
+   "p": "lab:assertedIn",
+   "o": "lab:work/koenker1978regression",
+   "anchor": "#ch29",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/softmax",
+   "p": "lab:assertedIn",
+   "o": "lab:work/mathemetica2026logistic",
+   "anchor": "#ch27",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/multilevel",
+   "p": "lab:assertedIn",
+   "o": "lab:work/datainterview2026regression",
+   "anchor": "#ch30",
+   "confidence": "high"
+  }
+ ]
+}

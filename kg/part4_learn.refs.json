@@ -1,0 +1,214 @@
+[
+ {
+  "type": "webpage",
+  "title": "Types of Regression Models Every Quant Should Know",
+  "author": [
+   {
+    "literal": "The Architecture Series"
+   }
+  ],
+  "id": "archseries2026regression",
+  "lab": {
+   "work": "lab:work/archseries2026regression",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "webpage",
+  "title": "Regression Algorithms in Machine Learning",
+  "author": [
+   {
+    "literal": "작자 미상 인포그래픽"
+   }
+  ],
+  "id": "regalgos2026",
+  "lab": {
+   "work": "lab:work/regalgos2026",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": false,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "article-journal",
+  "title": "Ridge regression: Biased estimation for nonorthogonal problems",
+  "author": [
+   {
+    "family": "Hoerl",
+    "given": "Arthur E."
+   },
+   {
+    "family": "Kennard",
+    "given": "Robert W."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1970
+    ]
+   ]
+  },
+  "container-title": "Technometrics",
+  "id": "hoerl1970ridge",
+  "lab": {
+   "work": "lab:work/hoerl1970ridge",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "article-journal",
+  "title": "Regression shrinkage and selection via the lasso",
+  "author": [
+   {
+    "family": "Tibshirani",
+    "given": "Robert"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1996
+    ]
+   ]
+  },
+  "container-title": "Journal of the Royal Statistical Society: Series B",
+  "id": "tibshirani1996lasso",
+  "lab": {
+   "work": "lab:work/tibshirani1996lasso",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "article-journal",
+  "title": "Regularization and variable selection via the elastic net",
+  "author": [
+   {
+    "family": "Zou",
+    "given": "Hui"
+   },
+   {
+    "family": "Hastie",
+    "given": "Trevor"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2005
+    ]
+   ]
+  },
+  "container-title": "Journal of the Royal Statistical Society: Series B",
+  "id": "zou2005regularization",
+  "lab": {
+   "work": "lab:work/zou2005regularization",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "book",
+  "title": "An Introduction to Statistical Learning",
+  "author": [
+   {
+    "family": "James",
+    "given": "Gareth"
+   },
+   {
+    "family": "Witten",
+    "given": "Daniela"
+   },
+   {
+    "family": "Hastie",
+    "given": "Trevor"
+   },
+   {
+    "family": "Tibshirani",
+    "given": "Robert"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2013
+    ]
+   ]
+  },
+  "publisher": "Springer",
+  "id": "james2013introduction",
+  "lab": {
+   "work": "lab:work/james2013introduction",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ }
+]

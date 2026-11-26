@@ -1,0 +1,245 @@
+[
+ {
+  "type": "webpage",
+  "title": "Regression Algorithms in Machine Learning",
+  "author": [
+   {
+    "literal": "작자 미상 인포그래픽"
+   }
+  ],
+  "id": "regalgos2026",
+  "lab": {
+   "work": "lab:work/regalgos2026",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": false,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "webpage",
+  "title": "Types of Regression Models Every Quant Should Know",
+  "author": [
+   {
+    "literal": "The Architecture Series"
+   }
+  ],
+  "id": "archseries2026regression",
+  "lab": {
+   "work": "lab:work/archseries2026regression",
+   "role": "primary",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": false,
+    "container": false,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 인포그래픽 그림에서 옮김",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "article-journal",
+  "title": "Random forests",
+  "author": [
+   {
+    "family": "Breiman",
+    "given": "Leo"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2001
+    ]
+   ]
+  },
+  "container-title": "Machine Learning",
+  "id": "breiman2001random",
+  "lab": {
+   "work": "lab:work/breiman2001random",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "article-journal",
+  "title": "Greedy function approximation: A gradient boosting machine",
+  "author": [
+   {
+    "family": "Friedman",
+    "given": "Jerome H."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2001
+    ]
+   ]
+  },
+  "container-title": "Annals of Statistics",
+  "id": "friedman2001greedy",
+  "lab": {
+   "work": "lab:work/friedman2001greedy",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "chapter",
+  "title": "A value for n-person games",
+  "author": [
+   {
+    "family": "Shapley",
+    "given": "Lloyd S."
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     1953
+    ]
+   ]
+  },
+  "container-title": "Contributions to the Theory of Games II",
+  "id": "shapley1953value",
+  "lab": {
+   "work": "lab:work/shapley1953value",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": true,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "paper-conference",
+  "title": "A unified approach to interpreting model predictions",
+  "author": [
+   {
+    "family": "Lundberg",
+    "given": "Scott M."
+   },
+   {
+    "family": "Lee",
+    "given": "Su-In"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2017
+    ]
+   ]
+  },
+  "container-title": "Advances in Neural Information Processing Systems 30",
+  "id": "lundberg2017unified",
+  "lab": {
+   "work": "lab:work/lundberg2017unified",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ },
+ {
+  "type": "book",
+  "title": "An Introduction to Statistical Learning",
+  "author": [
+   {
+    "family": "James",
+    "given": "Gareth"
+   },
+   {
+    "family": "Witten",
+    "given": "Daniela"
+   },
+   {
+    "family": "Hastie",
+    "given": "Trevor"
+   },
+   {
+    "family": "Tibshirani",
+    "given": "Robert"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2013
+    ]
+   ]
+  },
+  "publisher": "Springer",
+  "id": "james2013introduction",
+  "lab": {
+   "work": "lab:work/james2013introduction",
+   "role": "background",
+   "supports": [],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "작성자가 알고 있는 서지로 적음(외부 대조 안 함)",
+   "checkedSource": "author-memory"
+  }
+ }
+]

@@ -1,0 +1,577 @@
+{
+ "version": "1.0",
+ "page": "part1_line",
+ "nodes": [
+  {
+   "id": "lab:concept/regression",
+   "type": "Concept",
+   "label": {
+    "ko": "회귀",
+    "en": "Regression"
+   },
+   "page": "part1_line",
+   "anchor": "#ch1",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "이어지는 숫자(y)를 단서(x)로 맞히는 식을 데이터에서 찾는 일"
+   }
+  },
+  {
+   "id": "lab:concept/residual",
+   "type": "Concept",
+   "label": {
+    "ko": "잔차",
+    "en": "Residual"
+   },
+   "page": "part1_line",
+   "anchor": "#ch1",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "실제 값 − 예측값. 직선이 못 맞힌 나머지"
+   }
+  },
+  {
+   "id": "lab:concept/extrapolation",
+   "type": "Limitation",
+   "label": {
+    "ko": "밖으로 늘이기(외삽)의 위험",
+    "en": "Extrapolation"
+   },
+   "page": "part1_line",
+   "anchor": "#ch1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "데이터가 없는 범위까지 직선을 믿으면 크게 틀릴 수 있음"
+   }
+  },
+  {
+   "id": "lab:concept/correlation",
+   "type": "Concept",
+   "label": {
+    "ko": "피어슨 상관계수 r",
+    "en": "Pearson correlation"
+   },
+   "page": "part1_line",
+   "anchor": "#ch2",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "correlation",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "두 숫자가 직선으로 함께 움직이는 정도(−1~1)"
+   }
+  },
+  {
+   "id": "lab:concept/spearman",
+   "type": "Method",
+   "label": {
+    "ko": "스피어만 순위 상관 ρ",
+    "en": "Spearman rank correlation"
+   },
+   "page": "part1_line",
+   "anchor": "#ch2",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "correlation",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "값 대신 순위로 계산한 상관. 휘어도 한 방향이면 1에 가까움"
+   }
+  },
+  {
+   "id": "lab:concept/least-squares",
+   "type": "Method",
+   "label": {
+    "ko": "최소제곱법(OLS)",
+    "en": "Ordinary least squares"
+   },
+   "page": "part1_line",
+   "anchor": "#ch3",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "잔차 제곱의 합을 가장 작게 하는 직선을 고름"
+   }
+  },
+  {
+   "id": "lab:concept/sse",
+   "type": "Metric",
+   "label": {
+    "ko": "잔차 제곱합(SSE)",
+    "en": "Sum of squared errors"
+   },
+   "page": "part1_line",
+   "anchor": "#ch3",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "잔차를 제곱해 더한 값"
+   }
+  },
+  {
+   "id": "lab:concept/r-squared",
+   "type": "Metric",
+   "label": {
+    "ko": "결정계수 R²",
+    "en": "R-squared"
+   },
+   "page": "part1_line",
+   "anchor": "#ch4",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "evaluation",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "평균으로 찍을 때의 흩어짐 중 모델이 줄인 비율"
+   }
+  },
+  {
+   "id": "lab:concept/rmse",
+   "type": "Metric",
+   "label": {
+    "ko": "평균 빗나감(RMSE)",
+    "en": "Root mean squared error"
+   },
+   "page": "part1_line",
+   "anchor": "#ch4",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "evaluation",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "빗나감 제곱의 평균에 루트. 원래 단위"
+   }
+  },
+  {
+   "id": "lab:concept/spring-analogy",
+   "type": "Analogy",
+   "label": {
+    "ko": "용수철 균형",
+    "en": "Springs analogy"
+   },
+   "page": "part1_line",
+   "anchor": "#ch3",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "점마다 용수철로 당길 때 균형 자리가 최소제곱 직선"
+   }
+  },
+  {
+   "id": "lab:simulation/part1_line-ch1",
+   "type": "Simulation",
+   "label": {
+    "ko": "직선으로 예측하고 잔차 보기",
+    "en": "ch1 experiment"
+   },
+   "page": "part1_line",
+   "anchor": "#ch1-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part1_line-ch1-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "직선 ŷ = 43.9 + 5.05x 에서 5.05의 뜻은?",
+    "en": "ch1 quiz"
+   },
+   "page": "part1_line",
+   "anchor": "#ch1-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part1_line-ch2",
+   "type": "Simulation",
+   "label": {
+    "ko": "데이터 모양에 따라 r과 ρ 비교하기",
+    "en": "ch2 experiment"
+   },
+   "page": "part1_line",
+   "anchor": "#ch2-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part1_line-ch2-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "점들이 U자 모양으로 분명히 놓여 있는데 피어슨 r이 0.02예요. 맞는 해석은?",
+    "en": "ch2 quiz"
+   },
+   "page": "part1_line",
+   "anchor": "#ch2-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part1_line-ch3",
+   "type": "Simulation",
+   "label": {
+    "ko": "직선을 끌어서 잔차 제곱의 합 줄이기",
+    "en": "ch3 experiment"
+   },
+   "page": "part1_line",
+   "anchor": "#ch3-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part1_line-ch3-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "최소제곱법이 가장 작게 만드는 것은?",
+    "en": "ch3 quiz"
+   },
+   "page": "part1_line",
+   "anchor": "#ch3-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part1_line-ch4",
+   "type": "Simulation",
+   "label": {
+    "ko": "잡음에 따라 R²와 평균 빗나감 보기",
+    "en": "ch4 experiment"
+   },
+   "page": "part1_line",
+   "anchor": "#ch4-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part1_line-ch4-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "R² = 0.75의 뜻으로 맞는 것은?",
+    "en": "ch4 quiz"
+   },
+   "page": "part1_line",
+   "anchor": "#ch4-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/linearity2026infographic",
+   "type": "Work",
+   "label": {
+    "ko": "「Multiple Regression Assumption #1 Linearity」",
+    "en": "Multiple Regression Assumption #1: Linearity"
+   },
+   "page": "part1_line",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/spearman2026infographic",
+   "type": "Work",
+   "label": {
+    "ko": "「Spearman Rank Correlation」 인포그래픽",
+    "en": "Spearman Rank Correlation"
+   },
+   "page": "part1_line",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/insightforge2026ols",
+   "type": "Work",
+   "label": {
+    "ko": "Insightforge 「OLS: The Engine of Linear Regression」",
+    "en": "Ordinary Least Squares (OLS): The Engine of Linear Regression"
+   },
+   "page": "part1_line",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/mltut2026regression",
+   "type": "Work",
+   "label": {
+    "ko": "MLTut 「Regression Models」",
+    "en": "Regression Models"
+   },
+   "page": "part1_line",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/james2013introduction",
+   "type": "Work",
+   "label": {
+    "ko": "James 외 (2013) ISLR",
+    "en": "An Introduction to Statistical Learning"
+   },
+   "page": "part1_line",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/regression",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part1_line-ch1",
+   "anchor": "#ch1-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part1_line-ch1-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/regression",
+   "anchor": "#ch1-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/correlation",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part1_line-ch2",
+   "anchor": "#ch2-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part1_line-ch2-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/correlation",
+   "anchor": "#ch2-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/least-squares",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part1_line-ch3",
+   "anchor": "#ch3-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part1_line-ch3-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/least-squares",
+   "anchor": "#ch3-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/r-squared",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part1_line-ch4",
+   "anchor": "#ch4-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part1_line-ch4-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/r-squared",
+   "anchor": "#ch4-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/residual",
+   "p": "lab:partOf",
+   "o": "lab:concept/regression",
+   "anchor": "#ch1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/regression",
+   "p": "lab:hasLimitation",
+   "o": "lab:concept/extrapolation",
+   "anchor": "#ch1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/correlation",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/regression",
+   "anchor": "#ch2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/spearman",
+   "p": "lab:contrastsWith",
+   "o": "lab:concept/correlation",
+   "anchor": "#ch2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sse",
+   "p": "lab:partOf",
+   "o": "lab:concept/least-squares",
+   "anchor": "#ch3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/least-squares",
+   "p": "lab:addressedBy",
+   "o": "lab:concept/regression",
+   "anchor": "#ch3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/r-squared",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/sse",
+   "anchor": "#ch4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rmse",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/sse",
+   "anchor": "#ch4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/spring-analogy",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/least-squares",
+   "anchor": "#ch3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/regression",
+   "p": "lab:broader",
+   "o": "lab:topic/regression",
+   "anchor": "#ch1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/correlation",
+   "p": "lab:broader",
+   "o": "lab:topic/statistics",
+   "anchor": "#ch2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/r-squared",
+   "p": "lab:broader",
+   "o": "lab:topic/evaluation",
+   "anchor": "#ch4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/spearman",
+   "p": "lab:assertedIn",
+   "o": "lab:work/spearman2026infographic",
+   "anchor": "#ch2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/least-squares",
+   "p": "lab:assertedIn",
+   "o": "lab:work/insightforge2026ols",
+   "anchor": "#ch3",
+   "confidence": "high"
+  }
+ ]
+}

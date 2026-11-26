@@ -1,0 +1,108 @@
+# common.py — 시리즈 공통 문구 (사람이 고치는 곳)
+SERIES='회귀 예측·분석 대회'
+AUTHOR='안상선'
+AUTHOR_URL='https://adminmrobo.github.io/who_am_i/who_am_i.html'
+AFFIL='(주)M-Robo 대표'
+SITE='https://adminmrobo.github.io/Regression_model_lab_01/'
+CAST={
+ 'doc':{'label':'박사','team':'ref','mood':'smile','role':'심판이자 선생님. 판정은 처음 보는 데이터의 빗나감으로만 한다'},
+ 'fly':{'label':'초파리','team':'fly','mood':'point','role':'초파리 팀 조장. 일단 의심하고 잔차부터 본다'},
+ 'sia':{'label':'인턴1 시아','team':'fly','mood':'smile','role':'꼼꼼한 기록 담당. 그림으로 먼저 이해하는 편'},
+ 'x1':{'label':'X1','team':'fly','mood':'smile','role':'첫 번째 단서(설명 변수) x₁ 담당. 반례 찾기'},
+ 'x2':{'label':'X2','team':'fly','mood':'smile','role':'두 번째 단서 x₂ 담당. 숫자 확인'},
+ 'robo':{'label':'주판봇','team':'robo','mood':'firm','role':'주판봇 팀 조장. 크고 정교한 방법에 건다'},
+ 'moa':{'label':'인턴2 모아','team':'robo','mood':'smile','role':'계산이 빠르고 자신만만, 현장 사례 담당'},
+ 'haru':{'label':'조수 하루','team':'robo','mood':'smile','role':'수식이 나오면 대신 물어보는 조수. 장부 담당'},
+ 'x3':{'label':'X3','team':'robo','mood':'smile','role':'세 번째 단서 x₃ 담당. 조건 바꿔 보기'},
+}
+TEAMS={'fly':{'name':'초파리 팀','members':['sia','x1','x2']},'robo':{'name':'주판봇 팀','members':['moa','haru','x3']}}
+PARTS=[
+ {'slug':'part1_line','file':'part1_line.html','navname':'1 선 하나 긋기','chs':'챕터 1~4','oneline':'점들 사이로 빗나감이 가장 작은 직선 하나 긋기'},
+ {'slug':'part2_table','file':'part2_table.html','navname':'2 단서 여러 개와 결과표','chs':'챕터 5~9','oneline':'단서가 여럿이면 평면, 그리고 회귀분석 결과표 읽기'},
+ {'slug':'part3_resid','file':'part3_resid.html','navname':'3 잔차가 하는 말','chs':'챕터 10~14','oneline':'남은 빗나감(잔차)을 보고 모델의 가정을 점검하기'},
+ {'slug':'part4_learn','file':'part4_learn.html','navname':'4 스스로 찾아 내려가기','chs':'챕터 15~20','oneline':'경사 하강, 학습률, 과적합, 릿지·라쏘'},
+ {'slug':'part5_curve','file':'part5_curve.html','navname':'5 곡선 모델과 설명','chs':'챕터 21~25','oneline':'나무·숲·이웃·신경망, 그리고 샤플리 값·SHAP'},
+ {'slug':'part6_family','file':'part6_family.html','navname':'6 회귀의 가족','chs':'챕터 26~30','oneline':'로지스틱·소프트맥스·포아송·분위수·여러 층 회귀'},
+]
+ROUNDS=[{'win':'robo'},{'win':'fly'},{'win':'fly'},{'win':'robo'},{'win':'robo'},{'win':'fly'}]
+ABBR={
+ 'OLS':('보통 최소제곱','Ordinary Least Squares. 잔차(빗나감)를 제곱해 더한 값이 가장 작은 직선·평면을 찾는 방법'),
+ 'R²':('결정계수','R-squared. 데이터가 흩어진 정도 중 모델이 설명한 비율. 0~1'),
+ 'RMSE':('평균 빗나감(제곱근 평균 제곱오차)','Root Mean Squared Error. 빗나감을 제곱해 평균 내고 루트를 씌운 값. 원래 단위로 "평균 몇 개쯤 빗나가나"'),
+ 'MSE':('평균 제곱오차','Mean Squared Error. 빗나감 제곱의 평균'),
+ 'AIC':('아카이케 정보 기준','Akaike Information Criterion. 잘 맞는 정도와 단서 개수를 함께 따지는 점수. 낮을수록 좋다'),
+ 'SE':('표준오차','Standard Error. 데이터를 다시 모으면 계수가 얼마나 흔들릴지 나타내는 폭'),
+ 'VIF':('분산 팽창 인자','Variance Inflation Factor. 단서끼리 겹쳐서 계수의 흔들림이 몇 배 커졌는지'),
+ 'PCA':('주성분 분석','Principal Component Analysis. 겹치는 단서를 가장 넓게 퍼진 방향 몇 개로 묶는다'),
+ 'GD':('경사 하강','Gradient Descent. 손실이 줄어드는 내리막 방향으로 조금씩 내려가며 계수를 찾는다'),
+ 'SGD':('확률적 경사 하강','Stochastic Gradient Descent. 데이터 일부만 보고 내려가는 경사 하강'),
+ 'L1·L2':('라쏘·릿지 벌점','L1은 계수 크기의 절댓값 합, L2는 계수 제곱의 합을 벌점으로 더한다'),
+ 'CART':('분류·회귀 나무','Classification And Regression Tree. 질문으로 데이터를 나눠 구역마다 평균을 답하는 나무'),
+ 'XGBoost':('익스트림 그레이디언트 부스팅','eXtreme Gradient Boosting. 앞 나무가 틀린 만큼을 다음 나무가 고쳐 가는 부스팅의 대표 도구'),
+ 'KNN':('k-최근접 이웃','k-Nearest Neighbors. 가장 가까운 k개의 값을 평균 낸다'),
+ 'SVR':('서포트 벡터 회귀','Support Vector Regression. 관(튜브) 안의 빗나감은 봐주는 회귀'),
+ 'SHAP':('샤플리 덧셈 설명','SHapley Additive exPlanations. 예측 하나를 단서별 몫으로 나눠 설명한다'),
+ 'GLM':('일반화 선형 모델','Generalized Linear Model. 로지스틱·포아송처럼 직선 점수를 모양에 맞게 바꿔 쓰는 회귀 가족'),
+}
+REFS={
+ 'arch':{'id':'archseries2026regression','short':'The Architecture Series 「Types of Regression Models」','role':'primary',
+   'cite':'The Architecture Series, 「Types of Regression Models Every Quant Should Know」 인포그래픽 (회귀 10종)','use':'시리즈 전체 지도, 파트 4·6',
+   'csl':{'type':'webpage','title':'Types of Regression Models Every Quant Should Know','author':[{'literal':'The Architecture Series'}]},
+   'verified':{'title':True,'author':True,'year':False,'container':False,'pages':False,'doi':False},'checked':'저자가 준 인포그래픽 그림에서 옮김'},
+ 'di':{'id':'datainterview2026regression','short':'DataInterview 「Regression Models」·「Linear Regression」','role':'primary',
+   'cite':'DataInterview.com, 「Regression Models」(OLS·로지스틱·포아송·다층) 및 「Linear Regression」 인포그래픽','use':'파트 2 결과표, 파트 6',
+   'csl':{'type':'webpage','title':'Regression Models; Linear Regression','author':[{'literal':'DataInterview'}]},
+   'verified':{'title':True,'author':True,'year':False,'container':False,'pages':False,'doi':False},'checked':'저자가 준 인포그래픽 그림에서 옮김(공식 오류는 본문에서 바로잡음)'},
+ 'mltut':{'id':'mltut2026regression','short':'MLTut 「Regression Models」','role':'primary','cite':'MLTut, 「Regression Models」 인포그래픽 (OLS·로지스틱·포아송·다층)','use':'파트 1·6',
+   'csl':{'type':'webpage','title':'Regression Models','author':[{'literal':'MLTut'}]},'verified':{'title':True,'author':True,'year':False,'container':False,'pages':False,'doi':False},'checked':'저자가 준 인포그래픽 그림에서 옮김'},
+ 'algo':{'id':'regalgos2026','short':'「Regression Algorithms in Machine Learning」','role':'primary','cite':'「Regression Algorithms in Machine Learning」 인포그래픽 (9가지 모델이 데이터에 맞춰지는 모양)','use':'파트 4·5',
+   'csl':{'type':'webpage','title':'Regression Algorithms in Machine Learning','author':[{'literal':'작자 미상 인포그래픽'}]},'verified':{'title':True,'author':False,'year':False,'container':False,'pages':False,'doi':False},'checked':'저자가 준 인포그래픽 그림에서 옮김'},
+ 'eea':{'id':'eeanimation2026ls','short':'eeanimation 「Least-Squares Estimation」','role':'primary','cite':'eeanimation, 「Practical Hilbert Space 3/4 — Least-Squares Estimation」 인포그래픽','use':'파트 2 챕터 6(그림자로 본 최소제곱)',
+   'csl':{'type':'webpage','title':'Least-Squares Estimation','author':[{'literal':'eeanimation'}]},'verified':{'title':True,'author':True,'year':False,'container':False,'pages':False,'doi':False},'checked':'저자가 준 인포그래픽 그림에서 옮김'},
+ 'math':{'id':'mathemetica2026logistic','short':'@mathemetica 「Logistic & Softmax Regression」','role':'primary','cite':'@mathemetica, 「Logistic Regression · Softmax Regression」 도해','use':'파트 6 챕터 26·27',
+   'csl':{'type':'webpage','title':'Logistic Regression and Softmax Regression','author':[{'literal':'mathemetica'}]},'verified':{'title':True,'author':True,'year':False,'container':False,'pages':False,'doi':False},'checked':'저자가 준 인포그래픽 그림에서 옮김'},
+ 'spear':{'id':'spearman2026infographic','short':'「Spearman Rank Correlation」 인포그래픽','role':'primary','cite':'「Spearman Rank Correlation (ρ)」 인포그래픽','use':'파트 1 챕터 2',
+   'csl':{'type':'webpage','title':'Spearman Rank Correlation','author':[{'literal':'작자 미상 인포그래픽'}]},'verified':{'title':True,'author':False,'year':False,'container':False,'pages':False,'doi':False},'checked':'저자가 준 인포그래픽 그림에서 옮김(예제 계산 검산 완료)'},
+ 'lin':{'id':'linearity2026infographic','short':'「Multiple Regression Assumption #1 Linearity」','role':'primary','cite':'「Multiple Regression Assumption #1 — Linearity」 인포그래픽','use':'파트 1 예제 표, 파트 3',
+   'csl':{'type':'webpage','title':'Multiple Regression Assumption #1: Linearity','author':[{'literal':'작자 미상 인포그래픽'}]},'verified':{'title':True,'author':False,'year':False,'container':False,'pages':False,'doi':False},'checked':'저자가 준 인포그래픽 그림에서 옮김'},
+ 'pca':{'id':'peter2026pca','short':'Joshua Salami Peter 「PCA」','role':'background','cite':'Joshua Salami Peter (Statistics In Action), 「Principal Component Analysis」 인포그래픽','use':'파트 2 챕터 9',
+   'csl':{'type':'webpage','title':'Principal Component Analysis (PCA)','author':[{'literal':'Joshua Salami Peter'}]},'verified':{'title':True,'author':True,'year':False,'container':False,'pages':False,'doi':False},'checked':'저자가 준 인포그래픽 그림에서 옮김'},
+ 'ols':{'id':'insightforge2026ols','short':'Insightforge 「OLS: The Engine of Linear Regression」','role':'background','cite':'Insightforge, 「Ordinary Least Squares (OLS): The Engine of Linear Regression」 인포그래픽','use':'파트 1·2',
+   'csl':{'type':'webpage','title':'Ordinary Least Squares (OLS): The Engine of Linear Regression','author':[{'literal':'Insightforge'}]},'verified':{'title':True,'author':True,'year':False,'container':False,'pages':False,'doi':False},'checked':'저자가 준 인포그래픽 그림에서 옮김(깨진 수치 "T5%"는 쓰지 않음)'},
+ 'mattlee':{'id':'lee2026intuition','short':'Matt Lee 「오늘의 수학적 직관」','role':'background','cite':'Matt Lee, 「오늘의 수학적 직관」 (무작위 벡터의 선형 독립) SNS 글','use':'파트 2 챕터 9',
+   'csl':{'type':'post','title':'오늘의 수학적 직관','author':[{'literal':'Matt Lee'}]},'verified':{'title':True,'author':True,'year':False,'container':False,'pages':False,'doi':False},'checked':'저자가 준 화면 캡처에서 옮김'},
+ 'islr':{'id':'james2013introduction','short':'James 외 (2013) ISLR','role':'background','cite':'James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2013). <i>An Introduction to Statistical Learning</i>. Springer.','use':'회귀·과적합·릿지·라쏘·나무 설명 순서',
+   'csl':{'type':'book','title':'An Introduction to Statistical Learning','author':[{'family':'James','given':'Gareth'},{'family':'Witten','given':'Daniela'},{'family':'Hastie','given':'Trevor'},{'family':'Tibshirani','given':'Robert'}],'issued':{'date-parts':[[2013]]},'publisher':'Springer'},
+   'verified':{'title':True,'author':True,'year':True,'container':True,'pages':False,'doi':False},'checked':'작성자가 알고 있는 서지로 적음(외부 대조 안 함)'},
+ 'tibs':{'id':'tibshirani1996lasso','short':'Tibshirani (1996)','role':'background','cite':'Tibshirani, R. (1996). Regression shrinkage and selection via the lasso. <i>Journal of the Royal Statistical Society: Series B</i>, 58(1), 267–288.','use':'라쏘를 처음 제안한 논문',
+   'csl':{'type':'article-journal','title':'Regression shrinkage and selection via the lasso','author':[{'family':'Tibshirani','given':'Robert'}],'issued':{'date-parts':[[1996]]},'container-title':'Journal of the Royal Statistical Society: Series B'},
+   'verified':{'title':True,'author':True,'year':True,'container':True,'pages':False,'doi':False},'checked':'작성자가 알고 있는 서지로 적음(외부 대조 안 함)'},
+ 'hoerl':{'id':'hoerl1970ridge','short':'Hoerl & Kennard (1970)','role':'background','cite':'Hoerl, A. E., &amp; Kennard, R. W. (1970). Ridge regression: Biased estimation for nonorthogonal problems. <i>Technometrics</i>, 12(1), 55–67.','use':'릿지 회귀 논문',
+   'csl':{'type':'article-journal','title':'Ridge regression: Biased estimation for nonorthogonal problems','author':[{'family':'Hoerl','given':'Arthur E.'},{'family':'Kennard','given':'Robert W.'}],'issued':{'date-parts':[[1970]]},'container-title':'Technometrics'},
+   'verified':{'title':True,'author':True,'year':True,'container':True,'pages':False,'doi':False},'checked':'작성자가 알고 있는 서지로 적음(외부 대조 안 함)'},
+ 'zou':{'id':'zou2005regularization','short':'Zou & Hastie (2005)','role':'background','cite':'Zou, H., &amp; Hastie, T. (2005). Regularization and variable selection via the elastic net. <i>Journal of the Royal Statistical Society: Series B</i>, 67(2), 301–320.','use':'엘라스틱넷 논문',
+   'csl':{'type':'article-journal','title':'Regularization and variable selection via the elastic net','author':[{'family':'Zou','given':'Hui'},{'family':'Hastie','given':'Trevor'}],'issued':{'date-parts':[[2005]]},'container-title':'Journal of the Royal Statistical Society: Series B'},
+   'verified':{'title':True,'author':True,'year':True,'container':True,'pages':False,'doi':False},'checked':'작성자가 알고 있는 서지로 적음(외부 대조 안 함)'},
+ 'shapley':{'id':'shapley1953value','short':'Shapley (1953)','role':'background','cite':'Shapley, L. S. (1953). A value for n-person games. In <i>Contributions to the Theory of Games II</i> (pp. 307–317). Princeton University Press.','use':'샤플리 값의 출발점',
+   'csl':{'type':'chapter','title':'A value for n-person games','author':[{'family':'Shapley','given':'Lloyd S.'}],'issued':{'date-parts':[[1953]]},'container-title':'Contributions to the Theory of Games II'},
+   'verified':{'title':True,'author':True,'year':True,'container':True,'pages':True,'doi':False},'checked':'작성자가 알고 있는 서지로 적음(외부 대조 안 함)'},
+ 'lundberg':{'id':'lundberg2017unified','short':'Lundberg & Lee (2017) SHAP','role':'background','cite':'Lundberg, S. M., &amp; Lee, S.-I. (2017). A unified approach to interpreting model predictions. <i>NeurIPS 30</i>.','use':'SHAP 논문',
+   'csl':{'type':'paper-conference','title':'A unified approach to interpreting model predictions','author':[{'family':'Lundberg','given':'Scott M.'},{'family':'Lee','given':'Su-In'}],'issued':{'date-parts':[[2017]]},'container-title':'Advances in Neural Information Processing Systems 30'},
+   'verified':{'title':True,'author':True,'year':True,'container':True,'pages':False,'doi':False},'checked':'작성자가 알고 있는 서지로 적음(외부 대조 안 함)'},
+ 'breiman':{'id':'breiman2001random','short':'Breiman (2001)','role':'background','cite':'Breiman, L. (2001). Random forests. <i>Machine Learning</i>, 45(1), 5–32.','use':'랜덤 포레스트 논문',
+   'csl':{'type':'article-journal','title':'Random forests','author':[{'family':'Breiman','given':'Leo'}],'issued':{'date-parts':[[2001]]},'container-title':'Machine Learning'},
+   'verified':{'title':True,'author':True,'year':True,'container':True,'pages':False,'doi':False},'checked':'작성자가 알고 있는 서지로 적음(외부 대조 안 함)'},
+ 'friedman':{'id':'friedman2001greedy','short':'Friedman (2001)','role':'background','cite':'Friedman, J. H. (2001). Greedy function approximation: A gradient boosting machine. <i>Annals of Statistics</i>, 29(5), 1189–1232.','use':'그레이디언트 부스팅 논문',
+   'csl':{'type':'article-journal','title':'Greedy function approximation: A gradient boosting machine','author':[{'family':'Friedman','given':'Jerome H.'}],'issued':{'date-parts':[[2001]]},'container-title':'Annals of Statistics'},
+   'verified':{'title':True,'author':True,'year':True,'container':True,'pages':False,'doi':False},'checked':'작성자가 알고 있는 서지로 적음(외부 대조 안 함)'},
+ 'koenker':{'id':'koenker1978regression','short':'Koenker & Bassett (1978)','role':'background','cite':'Koenker, R., &amp; Bassett, G. (1978). Regression quantiles. <i>Econometrica</i>, 46(1), 33–50.','use':'분위수 회귀 논문',
+   'csl':{'type':'article-journal','title':'Regression quantiles','author':[{'family':'Koenker','given':'Roger'},{'family':'Bassett','given':'Gilbert'}],'issued':{'date-parts':[[1978]]},'container-title':'Econometrica'},
+   'verified':{'title':True,'author':True,'year':True,'container':True,'pages':False,'doi':False},'checked':'작성자가 알고 있는 서지로 적음(외부 대조 안 함)'},
+ 'nelder':{'id':'nelder1972generalized','short':'Nelder & Wedderburn (1972)','role':'background','cite':'Nelder, J. A., &amp; Wedderburn, R. W. M. (1972). Generalized linear models. <i>Journal of the Royal Statistical Society: Series A</i>, 135(3), 370–384.','use':'로지스틱·포아송을 묶은 일반화 선형 모델',
+   'csl':{'type':'article-journal','title':'Generalized linear models','author':[{'family':'Nelder','given':'J. A.'},{'family':'Wedderburn','given':'R. W. M.'}],'issued':{'date-parts':[[1972]]},'container-title':'Journal of the Royal Statistical Society: Series A'},
+   'verified':{'title':True,'author':True,'year':True,'container':True,'pages':False,'doi':False},'checked':'작성자가 알고 있는 서지로 적음(외부 대조 안 함)'},
+}
+def refs(*keys): return [REFS[k] for k in keys]
+def nextprev(prev,nxt):
+    a=lambda x,arrow:f'<a href="{x[0]}">{arrow} {x[1]}</a>' if x else '<span></span>'
+    return f'<div class="nextprev">{a(prev,"←")}{a(nxt,"→")}</div>'

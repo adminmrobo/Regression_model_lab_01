@@ -1,0 +1,43 @@
+{
+ "title": "회귀의 가족 — 확률, 개수, 범위, 여러 층까지",
+ "number": "파트 6",
+ "series": "회귀 예측·분석 대회",
+ "about": [
+  "lab:concept/logistic",
+  "lab:concept/softmax",
+  "lab:concept/poisson",
+  "lab:concept/quantile",
+  "lab:concept/multilevel"
+ ],
+ "basedOn": [
+  "datainterview2026regression",
+  "mltut2026regression",
+  "mathemetica2026logistic",
+  "archseries2026regression"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author",
+   "url": "https://adminmrobo.github.io/who_am_i/who_am_i.html"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-27",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/Regression_model_lab_01/part6_family.html",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "interactive explainer",
+ "seeAlso": "",
+ "suggestedCitation": "안상선 (2026). 회귀의 가족 — 확률, 개수, 범위, 여러 층까지. 회귀 예측·분석 대회 파트 6, v1.0."
+}

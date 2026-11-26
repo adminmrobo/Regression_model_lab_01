@@ -1,0 +1,788 @@
+{
+ "version": "1.0",
+ "page": "part5_curve",
+ "nodes": [
+  {
+   "id": "lab:concept/regression-tree",
+   "type": "Method",
+   "label": {
+    "ko": "회귀 나무",
+    "en": "Regression tree"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch21",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "tree-models",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "질문으로 나누고 잎의 평균을 답하는 모델"
+   }
+  },
+  {
+   "id": "lab:concept/random-forest",
+   "type": "Method",
+   "label": {
+    "ko": "랜덤 포레스트",
+    "en": "Random forest"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch22",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "tree-models",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "무작위로 다시 뽑은 데이터로 나무 여러 그루를 키워 평균"
+   }
+  },
+  {
+   "id": "lab:concept/boosting",
+   "type": "Method",
+   "label": {
+    "ko": "부스팅(XGBoost)",
+    "en": "Gradient boosting"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch22",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "tree-models",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "얕은 나무가 잔차를 학습률만큼씩 차례로 고침"
+   }
+  },
+  {
+   "id": "lab:concept/ensemble",
+   "type": "Concept",
+   "label": {
+    "ko": "앙상블",
+    "en": "Ensemble"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch22",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "tree-models",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "여러 모델을 모아 하나의 예측을 만듦"
+   }
+  },
+  {
+   "id": "lab:concept/knn-regression",
+   "type": "Method",
+   "label": {
+    "ko": "KNN 회귀",
+    "en": "KNN regression"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch23",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "nonlinear-models",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "가까운 k개 값의 평균"
+   }
+  },
+  {
+   "id": "lab:concept/svr",
+   "type": "Method",
+   "label": {
+    "ko": "서포트 벡터 회귀(SVR)",
+    "en": "Support vector regression"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch23",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "nonlinear-models",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "폭 ε 관 안의 빗나감은 벌점 0"
+   }
+  },
+  {
+   "id": "lab:concept/nn-regression",
+   "type": "Method",
+   "label": {
+    "ko": "신경망 회귀",
+    "en": "Neural network regression"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch23",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "nonlinear-models",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "S자 마디를 더해 곡선을 만들고 경사 하강으로 학습"
+   }
+  },
+  {
+   "id": "lab:concept/nonlinear-models",
+   "type": "Concept",
+   "label": {
+    "ko": "곡선(비선형) 모델",
+    "en": "Nonlinear models"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch23",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "nonlinear-models",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "모양을 데이터가 정하는 회귀 모델들"
+   }
+  },
+  {
+   "id": "lab:concept/shapley",
+   "type": "Method",
+   "label": {
+    "ko": "샤플리 값",
+    "en": "Shapley value"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch24",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "interpretability",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "모든 순서의 한계 기여 평균으로 몫을 나눔"
+   }
+  },
+  {
+   "id": "lab:concept/marginal-contribution",
+   "type": "Concept",
+   "label": {
+    "ko": "한계 기여",
+    "en": "Marginal contribution"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch24",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "interpretability",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "그 단서가 들어올 때 늘어난 값"
+   }
+  },
+  {
+   "id": "lab:concept/shap",
+   "type": "Method",
+   "label": {
+    "ko": "SHAP",
+    "en": "SHAP"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch25",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "interpretability",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "예측 = 평균 예측 + 단서별 샤플리 몫"
+   }
+  },
+  {
+   "id": "lab:concept/explanation-vs-cause",
+   "type": "Claim",
+   "label": {
+    "ko": "SHAP은 원인의 증명이 아니다",
+    "en": "Explanation is not causation"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch25",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "interpretability",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "모델이 예측을 나눈 방식일 뿐"
+   }
+  },
+  {
+   "id": "lab:concept/interaction",
+   "type": "Concept",
+   "label": {
+    "ko": "단서의 얽힘(상호작용)",
+    "en": "Interaction"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch25",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "regression-basics",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "한 단서의 효과가 다른 단서 값에 따라 달라짐"
+   }
+  },
+  {
+   "id": "lab:concept/bungeoppang-analogy",
+   "type": "Analogy",
+   "label": {
+    "ko": "셋이 판 붕어빵 나누기",
+    "en": "Shared stall analogy"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch24",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "family": "interpretability",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "함께 번 돈을 순서 평균으로 공평하게 나눔"
+   }
+  },
+  {
+   "id": "lab:simulation/part5_curve-ch21",
+   "type": "Simulation",
+   "label": {
+    "ko": "깊이를 바꾸며 계단 맞추기",
+    "en": "ch21 experiment"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch21-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part5_curve-ch21-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "회귀 나무의 잎(마지막 구역)이 내놓는 예측은?",
+    "en": "ch21 quiz"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch21-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part5_curve-ch22",
+   "type": "Simulation",
+   "label": {
+    "ko": "숲과 부스팅의 나무 수 바꾸기",
+    "en": "ch22 experiment"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch22-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part5_curve-ch22-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "부스팅에서 다음 나무가 맞히려고 하는 것은?",
+    "en": "ch22 quiz"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch22-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part5_curve-ch23",
+   "type": "Simulation",
+   "label": {
+    "ko": "KNN·SVR·신경망 곡선 비교",
+    "en": "ch23 experiment"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch23-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part5_curve-ch23-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "SVR에서 빗나감이 ε보다 작은 점은?",
+    "en": "ch23 quiz"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch23-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part5_curve-ch24",
+   "type": "Simulation",
+   "label": {
+    "ko": "여섯 가지 순서로 몫 나누기",
+    "en": "ch24 experiment"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch24-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part5_curve-ch24-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "샤플리 값을 모두 더하면 무엇과 같나요?",
+    "en": "ch24 quiz"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch24-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:simulation/part5_curve-ch25",
+   "type": "Simulation",
+   "label": {
+    "ko": "같은 집, 두 모델의 SHAP 폭포와 잔차",
+    "en": "ch25 experiment"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch25-panel",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:quiz/part5_curve-ch25-1",
+   "type": "QuizItem",
+   "label": {
+    "ko": "직선 회귀에서 계수 β = 2, 이 집의 x = 7, 평균 x = 4일 때 이 단서의 SHAP 값은?",
+    "en": "ch25 quiz"
+   },
+   "page": "part5_curve",
+   "anchor": "#ch25-quiz",
+   "level": 1,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/regalgos2026",
+   "type": "Work",
+   "label": {
+    "ko": "「Regression Algorithms in Machine Learning」",
+    "en": "Regression Algorithms in Machine Learning"
+   },
+   "page": "part5_curve",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/archseries2026regression",
+   "type": "Work",
+   "label": {
+    "ko": "The Architecture Series 「Types of Regression Models」",
+    "en": "Types of Regression Models Every Quant Should Know"
+   },
+   "page": "part5_curve",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/breiman2001random",
+   "type": "Work",
+   "label": {
+    "ko": "Breiman (2001)",
+    "en": "Random forests"
+   },
+   "page": "part5_curve",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/friedman2001greedy",
+   "type": "Work",
+   "label": {
+    "ko": "Friedman (2001)",
+    "en": "Greedy function approximation: A gradient boosting machine"
+   },
+   "page": "part5_curve",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/shapley1953value",
+   "type": "Work",
+   "label": {
+    "ko": "Shapley (1953)",
+    "en": "A value for n-person games"
+   },
+   "page": "part5_curve",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/lundberg2017unified",
+   "type": "Work",
+   "label": {
+    "ko": "Lundberg & Lee (2017) SHAP",
+    "en": "A unified approach to interpreting model predictions"
+   },
+   "page": "part5_curve",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  },
+  {
+   "id": "lab:work/james2013introduction",
+   "type": "Work",
+   "label": {
+    "ko": "James 외 (2013) ISLR",
+    "en": "An Introduction to Statistical Learning"
+   },
+   "page": "part5_curve",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": []
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/regression-tree",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part5_curve-ch21",
+   "anchor": "#ch21-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part5_curve-ch21-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/regression-tree",
+   "anchor": "#ch21-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ensemble",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part5_curve-ch22",
+   "anchor": "#ch22-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part5_curve-ch22-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/ensemble",
+   "anchor": "#ch22-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/nonlinear-models",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part5_curve-ch23",
+   "anchor": "#ch23-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part5_curve-ch23-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/nonlinear-models",
+   "anchor": "#ch23-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/shapley",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part5_curve-ch24",
+   "anchor": "#ch24-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part5_curve-ch24-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/shapley",
+   "anchor": "#ch24-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/shap",
+   "p": "lab:demonstratedBy",
+   "o": "lab:simulation/part5_curve-ch25",
+   "anchor": "#ch25-panel",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/part5_curve-ch25-1",
+   "p": "lab:assesses",
+   "o": "lab:concept/shap",
+   "anchor": "#ch25-quiz",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sse",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/regression-tree",
+   "anchor": "#ch21",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/regression-tree",
+   "p": "lab:hasLimitation",
+   "o": "lab:concept/overfitting",
+   "anchor": "#ch21",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/random-forest",
+   "p": "lab:partOf",
+   "o": "lab:concept/ensemble",
+   "anchor": "#ch22",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/boosting",
+   "p": "lab:partOf",
+   "o": "lab:concept/ensemble",
+   "anchor": "#ch22",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/boosting",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/gradient-descent",
+   "anchor": "#ch22",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/knn-regression",
+   "p": "lab:partOf",
+   "o": "lab:concept/nonlinear-models",
+   "anchor": "#ch23",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/svr",
+   "p": "lab:partOf",
+   "o": "lab:concept/nonlinear-models",
+   "anchor": "#ch23",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/nn-regression",
+   "p": "lab:partOf",
+   "o": "lab:concept/nonlinear-models",
+   "anchor": "#ch23",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/marginal-contribution",
+   "p": "lab:partOf",
+   "o": "lab:concept/shapley",
+   "anchor": "#ch24",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/bungeoppang-analogy",
+   "p": "lab:analogyOf",
+   "o": "lab:concept/shapley",
+   "anchor": "#ch24",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/shapley",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/shap",
+   "anchor": "#ch25",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/shap",
+   "p": "lab:contrastsWith",
+   "o": "lab:concept/ols-table",
+   "anchor": "#ch25",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/shap",
+   "p": "lab:contrastsWith",
+   "o": "lab:concept/residual",
+   "anchor": "#ch25",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/shap",
+   "p": "lab:hasLimitation",
+   "o": "lab:concept/explanation-vs-cause",
+   "anchor": "#ch25",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/interaction",
+   "p": "lab:relatedTo",
+   "o": "lab:concept/shap",
+   "anchor": "#ch25",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ensemble",
+   "p": "lab:broader",
+   "o": "lab:topic/tree-models",
+   "anchor": "#ch22",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/shap",
+   "p": "lab:broader",
+   "o": "lab:topic/interpretability",
+   "anchor": "#ch25",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/random-forest",
+   "p": "lab:assertedIn",
+   "o": "lab:work/breiman2001random",
+   "anchor": "#ch22",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/boosting",
+   "p": "lab:assertedIn",
+   "o": "lab:work/friedman2001greedy",
+   "anchor": "#ch22",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/shapley",
+   "p": "lab:assertedIn",
+   "o": "lab:work/shapley1953value",
+   "anchor": "#ch24",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/shap",
+   "p": "lab:assertedIn",
+   "o": "lab:work/lundberg2017unified",
+   "anchor": "#ch25",
+   "confidence": "high"
+  }
+ ]
+}
