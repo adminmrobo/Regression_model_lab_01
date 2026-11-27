@@ -6,7 +6,7 @@
 - 데이터: 모두 tools/gen.py의 고정 씨앗으로 만든 교육용 예시. 라운드 데이터는 두 방법의 차이가 잘 보이는 씨앗을 골랐고, 각 대회 규칙 아래에 그 사실을 밝힘.
 - 검산: `python3 tools/verify_numbers.py` (statsmodels·scikit-learn 대조) 69항목 통과. 실전 연습장 미션: `python3 tools/test_practice.py`로 정답 조작을 흉내 내 12개 모두 통과 확인. 390·1280px 가로 넘침 0, 콘솔 오류 0 (`python3 tools/check.py`).
 - 금지어 전체 검색 0건(독자 비하 별칭, 스킬 용어 규칙의 금지 표현 세 가지).
-- 표지: 생성 도구 그림을 받을 수 없어 `tools/make_covers.py`로 400×225 픽셀 배경을 4배 무손실 확대하고 정식 캐릭터 그림을 합성한 **임시 표지**. 고해상도 픽셀아트 지시문은 docs/IMG_PROMPTS.md.
+- 표지: Genspark에서 받은 고해상도 픽셀아트 8장(2048×1152)을 `tools/import_covers.py`로 1600×900 WebP(220 KB 이하)·공유 그림·썸네일로 반영. 그림 내용에 맞춰 대체 글(alt)을 다시 씀.
 
 ## 교수법 기준표 자가 채점 (21점 만점)
 | # | 원칙 | 점수 | 근거 |

@@ -33,7 +33,7 @@ def build(g):
     P=dict(slug='practice',file='practice/index.html',num='마지막 장',title='실전 연습장 — 네 사업장에서 손잡이 돌려 보기',
       desc='최소제곱·단서 고르기·경사 하강·로지스틱 회귀를 가상 사업장에서 직접 조작하는 시뮬레이터. 사업장마다 미션 3개, 자동 판정.',og='assets/img/og_practice.webp')
     h=head(P,'../').replace('href="../assets/engine.css?v=2">','href="../assets/engine.css?v=2"><link rel="stylesheet" href="practice.css?v=2">')+nav('practice')
-    h+='<figure class="cover"><img src="../assets/img/cover_practice.webp" alt="연구실 조종실. 벽의 화면 네 개에 ICE, RENT, GD, PASS 그래프가 떠 있고, 하루가 손잡이 앞에 서 있으며 박사·시아·모아·초파리·주판봇이 지켜본다" width="1600" height="900"></figure>'
+    h+='<figure class="cover"><img src="../assets/img/cover_practice.webp" alt="흰 벽의 연구실 조종실. 화면 네 개에 ICE, RENT, GD, PASS 그래프가 떠 있고, 박사가 색깔 단추가 달린 조종대의 손잡이를 잡고 있으며 주판봇·시아·모아·하루와 X1·X2·X3가 둘러서 있다" width="1600" height="900"></figure>'
     h+=f'''<header class="hero"><div class="wrap"><div class="kicker">{SERIES} · 마지막 장</div><h1>실전 연습장</h1><p class="sub">여섯 파트에서 배운 손잡이를 가상 사업장에서 직접 돌려 봅니다. 숫자는 모두 교육용 예시이며, 실제 가게·집·학생과 관계없어요. 여기서 <b>검증 데이터</b>는 손잡이를 고를 때 쓰는 "처음 보는 데이터"예요. 주소 끝에 #ice, #rent, #gd, #pass를 붙이면 그 사업장이 바로 열려요.</p>
 <div style="margin-top:18px">{dialog([('doc','smile','사업장마다 미션이 세 개예요. ① 가장 좋은 손잡이 찾기 ② 함정 직접 보기 ③ 조건을 바꿔도 결론이 유지되는지 확인. 판정은 검증 데이터로만 합니다.')])}</div></div></header>
 <main class="wrap stack" style="padding-bottom:40px"><div class="tabs" role="tablist" aria-label="사업장 고르기"><button data-t="ice">① 아이스크림 가게 (최소제곱)</button><button data-t="rent">② 월세 사무소 (단서 고르기)</button><button data-t="gd">③ 학습 공장 (경사 하강)</button><button data-t="pass">④ 합격 상담실 (로지스틱)</button></div>

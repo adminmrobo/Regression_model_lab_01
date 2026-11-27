@@ -17,7 +17,7 @@
 - 문구는 `data/*.py`(파트별 문구, 공통 캐릭터·약어·참고 자료), `python3 build.py`가 HTML을 만듭니다.
 - 데이터는 `python3 tools/gen.py assets/data.js`(고정 씨앗의 교육용 예시). 계산은 브라우저가 직접 합니다: `assets/reg.js`(최소제곱·결과표·경사 하강·릿지·라쏘·나무·부스팅·신경망·로지스틱·포아송·분위수·샤플리 값).
 - 점검: `python3 tools/verify_numbers.py`(statsmodels·scikit-learn 대조), `python3 tools/check.py`(390·1280px, 콘솔 오류), `python3 tools/test_practice.py`(연습장 미션 판정).
-- 표지: `python3 tools/make_covers.py`(임시 표지). 정식 그림 지시문은 `docs/IMG_PROMPTS.md`.
+- 표지: Genspark 정식 픽셀아트(지시문 `docs/IMG_PROMPTS.md`, 요청 꾸러미 `docs/genspark_request/`). 받은 그림은 `python3 tools/import_covers.py <폴더>`로 반영합니다. `tools/make_covers.py`는 예전 임시 표지 생성기입니다.
 - 지식 색인·꾸러미 원본: `kg/` 폴더. 페르소나 검사: `docs/PERSONA_REVIEW.md`.
 
 ## 참고 자료

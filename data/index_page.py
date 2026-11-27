@@ -4,7 +4,7 @@ def build(g):
     P=dict(slug='index',file='index.html',num='목차',title='회귀 예측·분석 대회 — 직선 하나에서 회귀의 가족까지',
       desc='행렬·벡터를 처음 배우는 분을 위한 회귀 해설 시리즈. 초파리 팀과 주판봇 팀이 최소제곱, 회귀분석 결과표, 잔차분석, 경사 하강·릿지·라쏘, 나무·부스팅·신경망과 SHAP, 로지스틱·포아송·분위수·다층 회귀로 여섯 라운드를 겨룹니다.',og='assets/img/og_index.webp')
     h=head(P)+nav('index.html')
-    h+='<figure class="cover"><img src="assets/img/cover_index.webp" alt="픽셀아트 운동장 가운데 칠판에 점들과 보라색 회귀 직선, 점마다 빨간 잔차 줄이 그려져 있다. 왼쪽에 초파리 팀(초파리·시아·X1·X2), 오른쪽에 주판봇 팀(주판봇·모아·하루·X3), 가운데에 심판 박사가 서 있다" width="1600" height="900"></figure>'
+    h+='<figure class="cover"><img src="assets/img/cover_index.webp" alt="픽셀아트 운동장. REGRESSION CUP이라고 적힌 칠판에 파란 점들과 보라색 회귀 직선, 점마다 빨간 잔차 줄이 있다. 가운데 심판석의 박사가 손을 들고, 왼쪽 청록 깃발 아래 초파리 팀(초파리·시아·X1·X2), 오른쪽 주황 깃발 아래 주판봇 팀(주판봇·모아·하루·X3)이 서 있다" width="1600" height="900"></figure>'
     h+=f'''<header class="hero" id="top"><div class="wrap"><div class="kicker">연구실 해설 시리즈 · 목차</div><h1>회귀 예측·분석 대회</h1>
 <p class="sub">공부 시간으로 점수를, 기온으로 판매량을, 넓이로 집값을 맞힐 수 있을까? 여섯 라운드 동안 두 팀이 <b>숫자를 맞히고(예측) 이유를 말하는(분석)</b> 회귀로 겨룹니다. 모든 라운드에 공통으로 흐르는 생각은 하나, <b>빗나감(잔차)을 가장 작게, 그리고 정직하게 재기</b>예요.</p>
 {scoreboard(0)}<div style="margin-top:24px">{dialog([('doc','smile','어서 와요. 저는 이번 대회의 심판이에요. 판정 기준은 하나, <b>처음 보는 데이터에서 얼마나 덜 빗나갔나</b>입니다.'),('fly','point','초파리 팀(인턴1 시아·X1·X2)은 일단 의심하고 잔차부터 본다.'),('robo','firm','주판봇 팀(인턴2 모아·하루·X3)은 크고 정교한 방법에 건다.'),('haru','smile','저는 주판봇 팀이지만, 수식이 나올 때마다 여러분 대신 물어보는 역할도 해요.'),('x1','happy','X1·X2·X3는 회귀의 단서(설명 변수) x₁, x₂, x₃를 맡아요. 두 팀에 나뉘어 들어갔어요.')])}</div></div></header>'''
